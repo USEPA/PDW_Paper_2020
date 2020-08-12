@@ -1,0 +1,112 @@
+---
+title: "Well Estimates Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(sf)
+library(leaflet)
+library(tidyverse)
+library(here)
+library(DT)
+library(wesanderson)
+
+```
+
+## Analysis of Well Estimates
+
+```{r dataLoad, echo = FALSE, message=FALSE}
+sf <- st_read(here("data/geopackage/final_estimates.gpkg"), layer="All_Estimates_Blk_Grps_QA") 
+```
+
+### This Analysis was run on `r Sys.Date()`. We estimate a total of **`r format(round(sum(sf$Wells_2010_Est, na.rm = TRUE)),big.mark=",",scientific=FALSE)`** housing units using private wells.
+## Tests Our method utilizes four tests to indicate wether or not certain errors
+may be present in the data.
+- Test #1: Did housing unit Density grow less than 1,000% between 1990 and 2000?
+(Yes = Pass / No = Fail)
+- Test #2: Did housing unit Density grow less than 1,000% between 2000 and 2010?
+(Yes = Pass / No = Fail)
+- Test #3: Was housing unit density less than 1,667 units per km<sup>2</sup> in 2010? (Yes = Pass / No = Fail)
+- Test #4: Was estimated well density less than 1,667 wells per km<sup>2</sup> in 2010? (Yes = Pas / No = Fail)
+
+### Looking at the breakdown of flags which were added to block groups that had failed tests.
+
+
+```{r ggPie, echo=FALSE, message=FALSE}
+flag <- sf%>%
+  mutate(Flag = ifelse(T1_Pass == FALSE | T2_Pass == FALSE | T3_Pass == FALSE | T4_Pass == FALSE, "Flag","No Flag"))
+
+flagTable <- table(flag$Flag)
+flagSimple <- data.frame(Group = c("Flag","No Flag"), Value = c(as.numeric(flagTable[1]),as.numeric(flagTable[2])))
+
+ggplot(flagSimple, aes(x="", y=Value, fill=Group))+
+geom_bar(width = 1, stat = "identity")+
+  coord_polar("y", start=0)+
+  scale_fill_manual(values=c("#bf1b0f","#1dbf0b"))
+
+
+```
+
+Out of `r format(round(nrow(sf)),big.mark=",",scientific=FALSE) ` block groups, `r format(as.numeric(flagTable[1]),big.mark=",",scientific=FALSE) ` had at least one flag.
+
+### Flags by type:
+
+```{r}
+t1 <- table(sf$T1_Pass)
+t2 <- table(sf$T2_Pass)
+t3 <- table(sf$T3_Pass)
+t4 <- table(sf$T4_Pass)
+
+byType <- data.frame("Group" = c("Test 1","Test 2","Test 3","Test 4"), "Value" = c(as.numeric(t1[1]),as.numeric(t2[1]),as.numeric(t3[1]),as.numeric(t4[1])))
+
+ggplot(byType, aes(x="", y=Value, fill=Group))+
+geom_bar(width = 1, stat = "identity")+
+  coord_polar("y", start=0)+
+  scale_fill_manual(values=c(wes_palette("Darjeeling1")[1],wes_palette("Darjeeling1")[2],wes_palette("Darjeeling1")[4],wes_palette("Darjeeling1")[5]))
+
+colnames(byType) <- c("Test","Number Failed")
+datatable(byType)
+```
+
+## Breakdown of estimates by state
+
+```{r}
+state <- sf%>%
+  st_drop_geometry()%>%
+  group_by(State)%>%
+  mutate(wells = round(sum(Wells_2010_Est, na.rm = TRUE)))%>%
+  select(State, wells)%>%
+  ungroup()%>%
+  distinct()
+
+ggplot(state)+
+  geom_col(aes(x = reorder(State,wells), y = wells))+
+  coord_flip()+
+  scale_y_continuous(labels=function(x) format(x, big.mark = ",", scientific = FALSE))+
+  labs(y = "Number of Huosing Units Using Wells", x = "State")
+
+datatable(state)
+```
+
+## Block Groups that had NA values in estimates
+
+```{r}
+# Load older housing unit data
+all <- st_read(here("data/geopackage/reag_2010_boundaries_w_wells.gpkg"))
+
+sub <- all%>%
+  st_drop_geometry()%>%
+  select(GISJOIN, hu_km2_90, hu_km2_00)
+
+na <- sf%>%
+  st_drop_geometry()%>%
+  filter(is.na(Wells_2010_Est))%>%
+  left_join(sub)%>%
+  select(GISJOIN,hu_km2_90,hu_km2_00,Housing_Units, Wells_1990,Wells_2010_Est)%>%
+  mutate(hu_km2_90 = round(hu_km2_90,2), hu_km2_00 = round(hu_km2_00,2))
+
+datatable(na)
+```
+
+The 
