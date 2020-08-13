@@ -66,7 +66,7 @@ The rate of well usage per block group in 1990. Block groups with a rate of zero
 
 ## Import constructed domestic well data (/scripts/04_Constructed_Wells_Spatial_Join.R)
 
-  This step takes the locations of known constructed wells (between 1990 and 2010) for the twenty states in our analysis and runs them through a spatial join in order to count the number of wells constructed for time periods of 1990-2000 and 2000-2010 for each block group within those twenty states.
+  This step takes the locations of known constructed wells (between 1990 and 2010) for the twenty states in our analysis and runs them through a spatial join in order to count the number of wells constructed for time periods of 1990-2000 and 2000-2010 for each block group within those twenty states. Due to size limitations of the constructed well database, we cannot host it here on GitHub. If you are interested in using it, please refer to the contact information at the bottom of this page. 
 
 ## Calculate Estimates (/scripts/05_calculate_Estimates.R)
 
@@ -82,4 +82,4 @@ The rate of well usage per block group in 1990. Block groups with a rate of zero
   This final step calculates estimated well use at the Census block level by calculating proprtion of housing units within a block related to it's parent block group. For example, If a block group with 100 housing units was estimated to have 20 housing units using wells, a block within that block group which accounted for 10 housing units would be estimated to have 2 of those housing units using private wells.
   
   
-Please direct questions about thee code in this repository to Andrew Murray: <Murray.AndrewR@epa.gov>
+Please direct questions about the code in this repository to Andrew Murray: <Murray.AndrewR@epa.gov>
