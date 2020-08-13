@@ -19,12 +19,14 @@ The information found below is a representation of the best available data and w
 **Suitable for RW:** Dataset is suitable for the RW method Y/N (Yes/No)
 
 ## Alabama
+
 **Description**
-	These records are scanned paper documents and have not been digitized.  Unsuitable for GIS in present form
+
+These records are scanned paper documents and have not been digitized.  Unsuitable for GIS in present form
 
 **Location Requirements**
 
-| Projections or roofs of adjacent building: 2 Feet, Secondary electrical services: 10 Feet, Primary electrical services: 75 Feet, Cess pool or sewage lagoon: 150 Feet, Septic tank or field lines: 100 Feet, Barnyard: 150 Feet
+Projections or roofs of adjacent building: 2 Feet, Secondary electrical services: 10 Feet, Primary electrical services: 75 Feet, Cess pool or sewage lagoon: 150 Feet, Septic tank or field lines: 100 Feet, Barnyard: 150 Feet
 
 **Reporting Requirements**
 
@@ -38,5 +40,31 @@ ADEM Admin. Code R. 335-9-1-.03 (Revised May 1988) : (1) Every person desiring t
 
 |Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
 |----|----|----|----|----|----|----|----|
-|75000|		|Y|	N||Unknown|	1988	|No|
+|75,000|		|Y|	N||Unknown|	1988	|No|
 
+## Alaska
+
+**Description**
+
+The well log database is designed for finding specific records and not bulk downloading locations of several, though the data is in digital form and could probably be obtained directly through the state.  It seems that a large number of wells in Alaska go unreported based on what reviewed materials.
+
+**Location Requirements**
+
+200 feet between public Non-Community Wells and on-site sewer systems
+
+**Reporting Requirements**
+
+"Upon completing the well construction, it's in your best interest, as a homeowner, to assure that the water well drilling log is submitted to the Department of Natural Resources (DNR) in order to record the information in WELTS. While water well contractors are required to submit this information to DNR, it is not always carried out. Failure to record this information in WELTS may lead to difficulties in future real estate transactions." [Source](https://dec.alaska.gov/eh/dw/dwp/private-wells.aspx)
+
+[Link to Alaska best management practices - Construction of non-public water wells](https://dec.alaska.gov/.../dwp-alaska-bmps-for-construction-of-non-public- water-wells.pdf)
+
+**Notes**
+
+According to the Alaska Division of Environmental Health: The State of Alaska, Drinking Water Program, does not sample, test, or regulate the construction of private drinking water wells. In fact, the only local governments that regulate and have established standards for private water wells are the Municipality of Anchorage and the City of North Pole. Separation distances from septic systems are only enforced when septic is installed. (https://dec.alaska.gov/eh/dw/dwp/private-wells.aspx)
+
+[Link to Data](https://dnr.alaska.gov/welts/#show-welts-intro-template)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|> 25,000|		|Y|	N|N|Unknown|	1979	|No|
+	
