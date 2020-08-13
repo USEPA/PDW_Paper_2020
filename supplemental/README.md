@@ -116,6 +116,24 @@ It is unclear when reporting was first required, however well logs spiked in 198
 |----|----|----|----|----|----|----|----|
 |72,437|	21,847	|N|	Y|N|Unknown|	1988	|Yes|
 
+## California
 
+**Note:** California, in recent years, has made extraordinary efforts in tracing well locations and the information here is likely now out of date.
+
+**Description**
+
+Up to 2 million California residents are served either by private domestic wells or by water systems serving fewer than 15 service connections
+
+**Location Requirements**
+
+Animal enclosures / septic systems: 100 ft (http://waterboards.ca.gov/gama/docs/wellowner_guide.pdf)
+
+**Reporting Requirements**
+	
+[California Well Portal](https://gispublic.waterboards.ca.gov/portal/apps/webappviewer/index.html?id=292dd4434c9c4c1ab8291b94a91cee85)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|800,000|	Unknown |Unknown|	Unknown|Unknown|Unknown|Unknown|No|
 
 
