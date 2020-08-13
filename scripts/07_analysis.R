@@ -77,8 +77,6 @@ ggplot()+
   geom_bar(data = allvalid, aes(x = STATEFP10, y = Wells_HYBRD), stat = "sum", fill = '#35b858')+
   coord_flip()
 
-
-
 # Export Block Groups for GeoPlatform Layer
 sfOut <- sf%>%
   select(GISJOIN,STATE,COUNTY,Population,Housing_Units,hybrd_2010,Wells_HYBRD,popServed,T1_Valid,T2_Valid,T3_Valid,T4_Valid)

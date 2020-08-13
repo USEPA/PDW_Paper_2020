@@ -40,7 +40,8 @@ ggplot(rw, aes(x=Wells_2010_Est, y = Wells_2010_NHU))+
   labs(x = "Estimated Wells (RW Method)", y = "Estimated Wells (NHU Method)",title = "NHU vs. RW Methods by State")+
   scale_x_continuous(labels=function(x) format(x, big.mark = ",", scientific = FALSE))+
   scale_y_continuous(labels=function(x) format(x, big.mark = ",", scientific = FALSE))+
-  theme(axis.text.x = element_text(angle = 45, hjust=1))
+  theme(axis.text.x = element_text(angle = 45, hjust=1),
+        plot.margin=unit(c(2,.5,2,.5),"in"))
 
 
 # Make a table of coefficients
@@ -69,4 +70,4 @@ table <- summary_lm%>%
   tab_header("NHU vs. RW Methods")%>%
   cols_label(r2 = html("R<sup>2</sup>"), y_int = "Y-int")
 
-gtsave(table,"C:/Users/HP/OneDrive - University of North Carolina at Chapel Hill/EPA_12_13_2017/Groundwater Well Use/Andrew Paper/Submission_2/figures/table_01.pdf")
+#gtsave(table,"C:/Users/HP/OneDrive - University of North Carolina at Chapel Hill/EPA_12_13_2017/Groundwater Well Use/Andrew Paper/Submission_2/figures/table_01.pdf")
