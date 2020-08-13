@@ -2,7 +2,7 @@
 
 ![](/img/NHU_Wells.png)
 
-Below, you will find a step by step walkthrough of how to reproduce the estimates for private well locations in the United States using methods first proposed in [Weaver et al., 2017](https://www.sciencedirect.com/science/article/pii/S0048969717315280) and expanded upon in Murray et al., 2020 (in review). All of the scripts referenced below can be located in the *PDW_Paper_2020/scripts/* folder.
+Below, you will find a step-by-step walkthrough of how to reproduce the Murray et al., 2020 (in review) Census block group and block estimates of private well locations in the United States. These methods were first proposed in [Weaver et al., 2017](https://www.sciencedirect.com/science/article/pii/S0048969717315280) as a pilot study. All scripts referenced below are located in the *PDW_Paper_2020/scripts/* folder.
 
 ## Data to download:
 
