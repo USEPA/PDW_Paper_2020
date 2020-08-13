@@ -56,11 +56,11 @@ The well log database is designed for finding specific records and not bulk down
 
 "Upon completing the well construction, it's in your best interest, as a homeowner, to assure that the water well drilling log is submitted to the Department of Natural Resources (DNR) in order to record the information in WELTS. While water well contractors are required to submit this information to DNR, it is not always carried out. Failure to record this information in WELTS may lead to difficulties in future real estate transactions." [Source](https://dec.alaska.gov/eh/dw/dwp/private-wells.aspx)
 
-[Link to Alaska best management practices - Construction of non-public water wells](https://dec.alaska.gov/.../dwp-alaska-bmps-for-construction-of-non-public- water-wells.pdf)
+[Link to Alaska best management practices - Construction of non-public water wells](https://dec.alaska.gov/eh/dw/dwp/private-wells.aspx#construct)
 
 **Notes**
 
-According to the Alaska Division of Environmental Health: The State of Alaska, Drinking Water Program, does not sample, test, or regulate the construction of private drinking water wells. In fact, the only local governments that regulate and have established standards for private water wells are the Municipality of Anchorage and the City of North Pole. Separation distances from septic systems are only enforced when septic is installed. (https://dec.alaska.gov/eh/dw/dwp/private-wells.aspx)
+According to the Alaska Division of Environmental Health: The State of Alaska, Drinking Water Program, does not sample, test, or regulate the construction of private drinking water wells. In fact, the only local governments that regulate and have established standards for private water wells are the Municipality of Anchorage and the City of North Pole. Separation distances from septic systems are only enforced when septic is installed. [Source](https://dec.alaska.gov/eh/dw/dwp/private-wells.aspx)
 
 [Link to Data](https://dnr.alaska.gov/welts/#show-welts-intro-template)
 
@@ -68,3 +68,29 @@ According to the Alaska Division of Environmental Health: The State of Alaska, D
 |----|----|----|----|----|----|----|----|
 |> 25,000|		|Y|	N|N|Unknown|	1979	|No|
 	
+## Arizona
+
+**Description**
+
+The Arizona Wells55 Database contains data on all known groundwater wells in the state. This data is readily usable for GIS work.
+
+**Location Requirements**
+
+All wells must be at least 100 feet from septic tanks or sewage disposal areas.
+
+**Reporting Requirements**
+
+R12-15-809. Notice of Intention to Drill A notice of intention to drill required to be filed pursuant to A.R.S. § 45-596 shall be signed by the owner or lessee of the property upon which the well is to be drilled. Historical Note Adopted effective March 5, 1984 (Supp. 84-2).
+
+**Notes**
+
+Wells are classified by exempt or non-exempt which are based on the pumping capacity of the well.  Wells that are capable of pumping less than 35 gallons per minute.
+
+[Link to Data](http://gisdata-azwater.opendata.arcgis.com/datasets/3a6dacfca3a34f2a977dadf203f0c20f_0)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|207,313|	122,270	|Y|	Y|N|11/18/2016|	1984	|Yes|
+
+
+
