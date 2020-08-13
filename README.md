@@ -82,4 +82,4 @@ The rate of well usage per block group in 1990. Block groups with a rate of zero
   This final step calculates estimated well use at the Census block level by calculating proprtion of housing units within a block related to it's parent block group. For example, If a block group with 100 housing units was estimated to have 20 housing units using wells, a block within that block group which accounted for 10 housing units would be estimated to have 2 of those housing units using private wells.
   
   
-Please direct questions about thee code in this repository to [Andrew Murray](<Murray.AndrewR@epa.gov>)
+Please direct questions about thee code in this repository to Andrew Murray: <Murray.AndrewR@epa.gov>
