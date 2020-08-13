@@ -86,11 +86,36 @@ R12-15-809. Notice of Intention to Drill A notice of intention to drill required
 
 Wells are classified by exempt or non-exempt which are based on the pumping capacity of the well.  Wells that are capable of pumping less than 35 gallons per minute.
 
-[Link to Data](http://gisdata-azwater.opendata.arcgis.com/datasets/3a6dacfca3a34f2a977dadf203f0c20f_0)
+[Link to Data](https://gisweb2.azwater.gov/WellReg)
 
 |Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
 |----|----|----|----|----|----|----|----|
 |207,313|	122,270	|Y|	Y|N|11/18/2016|	1984	|Yes|
+
+## Arkansas
+
+**Description**
+
+This database produces a table which can be copied and reconfigured for use in GIS.  It should be noted that latitude and longitude were input in reverse order for a few hundred records and must be switched.
+
+**Location Requirements**
+
+Cess Pools: 100 Feet, Leaching Pit: 100 Feet, Pit Privy: 100 Feet, Subsurface Seepage Tile: 100 Feet, Manure Piles: 100 Feet Septic Tank 100, Feet Sewers (Cast iron with water tight, leaded or mechanical joints): 50 Feet, Footing Drains (No connection to a sewer or a sump handling sewage): 10 Feet, Pump House Floor Drain (Cast iron with water tight joints and having free fall discharge to ground surface): 2 Feet
+
+**Reporting Requirements**
+
+‘Within ninety (90) days after a water well has been constructed or repaired, the constructor shall submit a report of construction to the Arkansas Water Well Construction Commission on such forms as are prescribed and furnished by the Commission. The date of construction and time of completion shall be the date and time the rig is removed or pulled off the bore hole or well. Reports must be legible, must supply all requested information applicable to the type of work done, and must contain the longitude and latitude of the well location.’
+
+**Notes**
+
+It is unclear when reporting was first required, however well logs spiked in 1988 and it is reasonable to suggest they were required somewhere between 1988-1991
+
+[Link to Data](http://arkansas.gov/awwcc/FramesConstructionReports.htm)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|72,437|	21,847	|N|	Y|N|Unknown|	1988	|Yes|
+
 
 
 
