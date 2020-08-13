@@ -195,13 +195,3 @@ write.csv(csvFinal_OnlyWells, here("data/csv/final_estimates_block_groups_only_w
 
 st_write(sfQA, here("data/geopackage/final_estimates.gpkg"), layer= "All_Estimates_Blk_Grps_QA", append = FALSE)
 
-
-
-# Checking things out
-
-ar <- sfQA%>%
-  filter(State == "Arkansas")
-
-head(ar)
-
-plot(ar$Wells_1990~ar$Wells_2010_Est)

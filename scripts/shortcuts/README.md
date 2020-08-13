@@ -1,0 +1,3 @@
+## Shortcuts for Raster Extractions
+
+The script to convert to 2010 boundaries can take a very long time for some of the larger states (over a day depending on processing power). Texas, for example can take over a day if it is not broken up. One solution to this is to run larger states in smaller parts and then combine them after the fact. These scripts will run Texas in six separate batches, then *TX_merge.R* can be used to combine them back together. These scripts could obviously be modified to break up other states as well, such as California. 

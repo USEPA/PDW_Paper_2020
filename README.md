@@ -74,3 +74,9 @@ The rate of well usage per block group in 1990. Block groups with a rate of zero
 
 
 ## Refine results to account for spatially induced errors (/scripts/06_refine_results.R)
+
+  This step applies our QA flags to our datasets by finding estimates which could include errors contributed by a variety of issues such as rapid urban development, or spatial errors induced by significant boundary redrawing over time. The output of this script is a singular national file of block groups which contains estimates used for publication.
+  
+## Increase spatial resolution to Census Blocks (/scripts/07_refine_to_blocks.R)
+
+  This final step calculates estimated well use at the Census block level by calculating proprtion of housing units within a block related to it's parent block group. For example, If a block group with 100 housing units was estimated to have 20 housing units using wells, a block within that block group which accounted for 10 housing units would be estimated to have 2 of those housing units using private wells.
