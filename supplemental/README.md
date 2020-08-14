@@ -377,6 +377,114 @@ K.A.R. 28-30-8(a): The horizontal distances between the well and the potential s
 |----|----|----|----|----|----|----|----|
 |262,586|70,214|N|Y|Y|1/3/2017|1974|Yes|
 
+## Kentucky
+
+**Description**
+
+Includes wells found from the Kentucky Groundwater Data Repository
+
+**Location Requirements**
+
+401 KAR 6:310. Water supply well construction practices and standards: Leaching Pit: 100 Feet, Petroleum Storage Tank: 100 Feet, Grave or Cemetery: 75 Feet, Manure Pile / Animal Waste Storage / Confined Animal Feeding Operation: 75 Feet, Wastewater Treatment Disposal System: 75 Feet, Side Wall of Lateral Trench / Bed / Lagoon: 70 Feet, Geothermal – Closed Loop / Un-grouted: 70 Feet, Water Supply Well: 50 Feet, Septic Tank or Sewer Line: 50 Feet, Livestock Pen / Corral / Stable:50 Feet, Surface Water Body:25 Feet, Geothermal – Closed Loop, Grouted / Abandoned Water Well Grouted: 20 Feet, Property Lines / Utility Lines / Roadway Right of Way:10 Feet
+
+**Reporting Requirements**
+
+[Link to Data](http://www.uky.edu/KGS/gis/hydro.htm)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|98,482|45,290|N|Y|N|3/1/2015|1985|Yes|
+
+## Louisiana
+
+**Description**
+
+GIS downloadable file from Louisiana DNR.
+
+**Location Requirements**
+
+"Title 56 PUBLIC WORKS Part I §313. Minimum Distance Requirements for Locating a Water Well: Septic Tanks: 50, Storm / Sanitary Sewer: 50, Cesspools / outdoor privies / oxidation ponds / subsurface absorption fields / pits: 100, Sanitary landfills / feed lots / manure piles / solid-waste dumps and similar installations: 100, 
+Another water well: 25, Drainage canal / ditch / stream / pond / lake: 50"
+
+**Reporting Requirements**
+
+"Title 56 PUBLIC WORKS Part I. Water Wells §105: The contractor who drills or constructs a well or hole
+on or after November 1, 1985 shall be responsible for
+registering that well or hole by submitting to the department a completed water well registration Form within 30 calendar days after completing such well or hole"
+
+**Notes**
+
+The location requirements listed are the basic setback distances.  Louisiana state law allows for several exceptions based on construction methods of contamination sources as detailed in the statute referenced.
+
+[Link to Data](http://sonris.com/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|207,014|82,914|N|Y|Y|1/24/2017|1985|Yes|
+
+## Maine
+
+**Description**
+
+CSV files from Maine department of Agriculture, Conservation and Forestry
+
+**Location Requirements**
+
+400.2: Wells from waste disposal fields (<2,000 gpd): 100 feet, Wells from waste water disposal fields (>2,000 gpd): 300 feet. 
+400.4: "The minimum horizontal setback distance of a water supply well from septic tanks, lift stations, and holding tanks is 60 feet." 
+
+**Reporting Requirements**
+
+
+**Notes**
+
+A data file (CSV(zipped) 2.8MB) containing over 50,000 located wells is available for download. This file contains information on all wells in the database which could be geographically located. Data points have been located by GPS, by street address locations, and by using tax maps in combination with air photos so location accuracy varies. The database includes coordinates and descriptive information such as well yield, depth, overburden thickness, well use, and well type. This information is also portrayed on the Bedrock Groundwater Resources Basic Data Maps in PDF format. There is also a data file (CSV(zipped) 2.2MB) available containing over 65,000 unlocated wells that is available for download.  . . . .  Many setback reduction exemptions exist per section 400.3. Also, there is no specific language written in the law providing setback distances from underground storage tanks.
+
+
+[Link to Data](http://www.maine.gov/dacf/mgs/pubs/digital/well.htm)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|122,186|Unknown|Y|Y|N|5/25/2016|1987|Yes|
+
+## Maryland
+
+**Description**
+
+Database obtained from public information request through the Maryland Department of the Environment. Native format is an Access database which can be converted into a geodatabase.  Each record corresponds to a log and so it is possible for several rows in the database to refer to the same physical well.  Metadata is included
+
+**Reporting Requirements**
+
+Drilling records seem to be required at the county level and are then forwarded on to the Maryland Department of Environment.  It is unclear when reporting began to be required across counties.  By looking at the data we can assume reporting began sometime in the 1940's.
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|556,218|444,435|Y|Y|N|11/28/2017||Yes|
+
+## Massachusettes
+
+**Description**
+
+"The MassDEP Well Driller Program has created a database of groundwater wells in Massachusetts. This information is used by the well drilling industry; local, state and Federal government; and the general public." [Source](https://www.mass.gov/service-details/well-database)
+
+**Location Requirements**
+
+Property Line: 10', Public/Private Roadway: 25', Right Of Way: 15', Sewer line/septic tank: 50', Leaching field or drywell: 100', Stable/ barnyard/ manure storage: 100', Aboveground fuel storage or pesticide tank: 100', Underground fuel storage or pesticide tank: 250', Surface water / wetlands: 25'.
+
+
+**Reporting Requirements**
+
+"Requirements of 310 CMR 46.00 state, in part, that within 30 days after completion of any well (productive or nonproductive), or after plugging of an abandoned well, a certified well driller shall submit to the Drinking Water Program, a Well Completion Report (Figures 3 and 4) with a copy to the local Board of Health"
+
+[Guidelines for Well Drilling](https://www.mass.gov/service-details/private-well-guidelines)
+
+[Link to Data](https://eeaonline.eea.state.ma.us/portal#!/search/welldrilling)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|186,342|92,457|Y|Y|N|1/27/2017|1989|No|
+
+
 
 
 
