@@ -724,6 +724,77 @@ Reporting and location requirements can be found [here](https://www.ose.state.nm
 |----|----|----|----|----|----|----|----|
 |128,000|74,734|Y|Y|Y|2/3/2017||Yes|
 
+## New York
+
+**Description**
+
+Very minimal records considering the size of New York.  Although records are required, they don't seem to be actively updating the well log database (at least the public facing one).
+
+**Location Requirements**
+
+According to subsection RP2602.1.1.3 of the Residential Code of New York State, wells shall be located an appropriate distance from known sources of contamination: Wastewater treatment absorption systems located in coarse gravel or in the the direct path of drainage to a well (200 feet). Seepage Pit following a septic tank (150 feet). Absorption field (100 feet). Septic Tank / Aerobic Unit / watertight effluent line to distribution box (50 feet). Stream / lake / watercourse / drainage ditch / wetland (25 feet).
+
+**Reporting Requirements**
+
+NYS Water Well Driller Registration Law (ECL 15-1525): The certificate of registration shall require that before the commencement of drilling of any well or wells the water well driller shall file a preliminary notice with the department; it shall also provide that upon the completion of the drilling of any water well or water wells a completion report be filed with the department, giving the log of the well, the size and depth thereof, the capacity of the pump or pumps attached or to be attached thereto, and such other information pertaining to the withdrawal of water and operation of such water well or water wells as the department by its rules and regulations may require
+
+[Link to Data](http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1203)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|24,562||N|Y|N|12/1/2016|2000|No|
+
+## North Carolina
+
+**Description**
+
+North Carolina requires permitting and reporting, however this is handled at the county level. While these records appear to be reported to the state, there does not appear to be a singular dataset publicly available. North Carolina has one hundred counties, making this a formidable obstacle to building a singular dataset.
+
+**Location Requirements**
+
+15 NCAC 02C .0107: The extensive setback requirements can be found at: http://reports.oah.state.nc.us/ncac/title%2015a%20-%20environmental%20quality/chapter%2002%20-%20environmental%20management/subchapter%20c/15a%20ncac%2002c%20.0107.pdf                                                             
+
+Examples: 
+-	Septic Systems: 100 feet
+-	CAFOs: 100 feet
+
+**Reporting Requirements**
+
+Mandated by the state but handled at the county level: "North Carolina General Statute 87-97 requires counties to have programs for permitting, inspecting, and testing of private drinking water wells, which are constructed, repaired, or abandoned, on or after July 1, 2008. As a result, county health departments enforce state statutes and rules and receive technical and legal assistance from the Environmental Health Section. The program is designed to protect human health and groundwater quality by ensuring private drinking water wells are properly constructed, repaired, and abandoned."
+[Source](http://ehs.ncpublichealth.com/oswp/docs/PrivateWellsFrequentlyAskedQuestions.pdf)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|Unknown|Unknown|Unknown|Unknown|Unknown|Unknown|2008|No|
+
+## North Dakota
+
+**Description**
+
+North Dakota maintains two separate well databases: Ground/Surface water sites & Well Drillers logs.
+
+**Location Requirements**
+
+North Dakota Administrative Code: 33-18-01-04. (Location of wells): "At least one hundred feet [30.48 meters] (fifty feet [15.24 meters] for private wells) from privy pits, cesspools, septic tanks, absorption fields, barnyards, feedlots, high water marks of lakes, streams, sloughs, ponds, etc., when well is constructed in unconsolidated soils with filtering properties. At least thirty feet [9.14 meters] from sewerlines. At least ten feet [3.05 meters] from basements or pits. At least twenty feet [6.1 meters] from overhead powerlines and other hazardous devices." 
+
+**Reporting Requirements**
+
+North Dakota Century Code *43-35-19*. Standards for well drilling - Reports required.
+"All construction of water wells must comply with the rules adopted by the state department
+of health. Within thirty days after the completion of each well, each water well contractor shall
+furnish to the board on forms provided by the board such information as the state department of
+health shall require, including a log of formations penetrated, well depth, and casing size and
+weight. A copy of each report must also be furnished to the customer. All information submitted
+must remain the property of the board."
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|102,907|28,638|N|Y|N|3/16/2017|1982|No|
+
+
+
+
+
 
 
 
