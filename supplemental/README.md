@@ -313,6 +313,23 @@ Existing Public Water Supply well, separate ownership - 50’, Other existing we
 |----|----|----|----|----|----|----|----|
 |174,450|	163,662 |Y|Y|N|12/30/2016|1987|Yes|
 
+## Illinois
+
+**Description**
+	ISGS Wells and Borings Database includes every boring relating to oil / gas / water etc… (Updated weekly).
+
+**Location Requirements**
+
+"Prohibitions.  No new water well may be located within 200 feet of any potential primary or potential secondary source or any potential route, unless some other distance is allowed or required in Table C.  If the owner is the same for both the well to serve the private water system and a potential secondary source or a potential route, the well shall be no closer than 75 feet from the potential route or potential secondary source, unless some other distance is allowed or required in Table C." (IL Administrative Code Title 77, Section 920.50)
+
+**Reporting Requirements**
+
+The Illionois department of public health reviews and issues permits for well construction and requires completion reports. More information can be found here: http://www.idph.state.il.us/envhealth/waterwells.htm
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|590,726|	285,436 |N|Y|N|2/1/2017|1967|Yes|
+
 
 
 	
