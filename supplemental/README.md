@@ -613,7 +613,116 @@ May be suitable for RW method if starting at 2000. Regulations can be found here
 |----|----|----|----|----|----|----|----|
 |231,115|231,115|Y|Y|Y|2/6/2017|1993|No|
 
+## Nevada
+Description
+	State of Nevada division of water resources maintained database.
 
+**Location Requirements**
+
+[Full Document Here](http://water.nv.gov/home/pdfs/WD%20regs.pdf)
+
+**Reporting Requirements**
+
+	"NRS 534.170 Well driller to keep log and records; contents; information to be furnished to State Engineer; report of test.
+      1. The well driller shall keep:
+      (a) A log of the depth, thickness and character of the different strata penetrated and the location of water-bearing strata; and
+      (b)An accurate record of the work, including:
+             (1)A statement of the date of beginning work;
+             (2)The date of completion;
+             (3)The length, size and weight of the casing and how it is placed;
+             (4)The size of the drilled hole;
+             (5)Where sealed off and the type of seal;
+             (6)The name of the well driller and the type of drilling machine used;
+             (7)The number of cubic feet per second or gallons per minute of flow from such well when completed; and
+             (8)The pressure in pounds per square inch if it is a flowing well, and, if nonflowing, the static water level, and the water temperature.
+      2.The well driller shall furnish a copy of the log and the record of work for every well drilled to the State Engineer within 30 days after the well is completed.
+      3.If the well is to be tested by pumping by the holder of the permit, the report of the test must include the drawdown with respect to the amount of water pumped and any additional information requested by the State Engineer. This information must be reported and verified on forms prescribed by the State Engineer. The report must be returned:
+      (a)Immediately following the completion of the test; or
+      (b)Within 30 days following the completion of the well,
+Ê whichever occurs later.
+      4.The log, record of the work and report of the test are a permanent record in the Office of the State Engineer.
+      [Part 7a:178:1939; added 1947, 52; A 1955, 328] — (NRS A 1981, 1842)"
+
+
+[Link to Data](http://water.nv.gov/welllogquery.aspx)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|125,272|60,781|Y|Y|Y|2/1/2017|1981|Yes|
+
+
+## New Hampshire
+
+**Description**
+
+
+**Location Requirements**
+
+Effluent Disposal Area (leach field/bed): 75’. Septic Tank: 75’. Property Boundary: 75’.
+Livestock Pen: 75’ (100’ for dug wells). Automobile Salvage Yard: 75’. Underground Storage Tanks (containing gas or diesel fuel): 250’. Storage of Regulated Substance (except gas or diesel fuel): 75’. Solid Waste Disposal Site: 75’. Bulk Storage of Material (ex. fertilizer, manure, salt) 75’. Stump Dump: 75’. State Highway Right-of-Way: 50’. Sewer Component: 50’. Surface Water / Swamp: 50’. Public Road Surface: 75’. Other Sources of Contamination: 75’.
+
+[Source](https://www.des.nh.gov/organization/commissioner/pip/factsheets/dwgb/documents/dwgb-21-1.pdf)
+
+**Reporting Requirements**
+
+Statute RSA 482-B which requires the licensing of water well contractors and the submission of well completion reports.
+
+**Notes**
+
+"The New Hampshire water well inventory database was initiated in 1984 in conjunction with the passage of state statute RSA 482-B which requires the licensing of water well contractors and the submission of well completion reports."
+
+[Link to Data](https://www.des.nh.gov/organization/commissioner/gsu/wwip/index.htm)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|64,956|Unknown|Y|Y|N|12/15/2011|1984|No|
+
+
+## New Jersey
+
+**Description**
+
+New Jersey has a very good electronic well tracking system that is regularly updated. It includes permits, reports and also decommissioning / sealing of wells.
+
+**Location Requirements**
+
+Wells must be located a minimum of: 25’ from sewer, 50’ from septic, 50’ from distribution box, 100’ from disposal field, 100’ from seepage pit, 50’ from dry well, 150’ from cesspool, 25’ from fuel storage tank. (http://marathonconsultants.com/wp-content/uploads/2016/05/njac7_9d.pdf)
+
+**Reporting Requirements**
+
+All newly constructed wells must be drilled by a  licensed driller and require both a permit and a report to be filed upon completion
+
+
+[Well Testing Act](https://www.state.nj.us/dep/watersupply/pw_pwta.html)
+
+[Link to Data](https://www13.state.nj.us/DataMiner)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|739,634|490,203|Y|Y|N|2/8/2017|1952|Yes|
+
+## New Mexico
+
+**Description**
+
+The NM Office of the State Engineer (OSE) "Point of Diversions" (POD) layer includes well locations, surface declarations, or surface permits. These data were extracted from the OSE W.A.T.E.R.S. (Water Administration Technical Engineering Resource System) database and geo-located (mapped). All attribute fields are fully described in the metadata, including descriptions of field codes. Please read the metadata accompanying this GIS data layer for further information.
+
+**Location Requirements**
+
+“A new domestic well shall be set back a minimum of 50 feet from any existing well that another person owns. The New Mexico Environment Department (NMED) has established the following setback requirements for domestic wells (NMED’s website lists additional setbacks): Septic Tank: 50 feet, Drain Field/1st opening in leach line: 100 feet, Seepage Pit: 100 feet, Sewer line: 50 feet.”
+
+**Reporting Requirements**
+
+The well driller is required to file a complete Well Record with the Office of the State Engineer and the permit holder no later than 20 days after drilling completion. If the Well Record is not received by the expiration date of the permit, it automatically expires and a new permit and fee will be required to drill.
+
+
+Reporting and location requirements can be found [here](https://www.ose.state.nm.us/Statewide/handout/Drilling_Your_Water_Well121114.pdf)
+
+[Link to Data](https://gis.ose.state.nm.us/gisapps/ose_pod_locations/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|128,000|74,734|Y|Y|Y|2/3/2017||Yes|
 
 
 
