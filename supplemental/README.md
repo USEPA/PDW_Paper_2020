@@ -136,4 +136,69 @@ Animal enclosures / septic systems: 100 ft (http://waterboards.ca.gov/gama/docs/
 |----|----|----|----|----|----|----|----|
 |800,000|	Unknown |Unknown|	Unknown|Unknown|Unknown|Unknown|No|
 
+## Colorado
+
+**Description**
+
+Full database includes denied permits as well as approved and constructed wells.  The 522,388 refers to all of the available permits including those denied.  The 215,828 wells refer to only those that were listed as constructed under the categories of ''domestic' and 'household use only'.
+
+**Location Requirements**
+
+"In most cases, exempt well permits limit the pumping rate to no
+more than fifteen gallons per minute.    Household Use Only Wells - These types of well permits are issued for ordinary household uses in one single family dwelling and do not allow for outside water or livestock watering."
+
+**Reporting Requirements**
+
+It appears that requirements began in 1972 however this is not confirmed.
+
+[Link to Data](https://www.colorado.gov/pacific/cdss/gis-data-category)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|522,388|	215,828 |N|	Y|Y|2/3/2017|	1972	|Yes|
+
+
+## Connecticut
+
+**Description**
+
+There are approximately 322,578 private residential wells in Connecticut that serve approximately 23% of the state’s population of 3,574,097 persons (2010 census). About 822,575 people are served by their own private residential well.
+
+**Location Requirements**
+	
+
+**Reporting Requirements**
+
+
+**Notes**
+
+‘Local Health Departments and Districts have the authority over private wells in their respective towns. Private wells must be properly sited and approved before being constructed.  For technical advice on well construction, maintenance, water quality or water treatment systems contact your Local Health Department/District or the Department of Public Health – Private Well Program at 860-509-7296.’
+
+[Link to more Information](http://www.ct.gov/dph/cwp/view.asp?a=3140&q=400544&dphNav_GID=1828&dphPNavCtr=|#48151)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|Unknown|	Unknown |Unknown|Unknown|Unknown|Unknown|Unknown|No|
+
+## Delaware
+
+**Description**
+
+At the start of this work, well logs appeared to exist in the TEPP (Technology Enabled Permitting Process) system, however data had to be requested through the state government. Presently, Delaware has created an open data portal and it may now be possible to apply the RW method to Delaware.
+
+**Location Requirements**
+
+Unknown
+
+**Reporting Requirements**
+
+Unknown
+
+[Link to Data](https://data.delaware.gov/Energy-and-Environment/Well-Permits/2655-qn8j)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|Unknown|	Unknown |Unknown|Unknown|Unknown|Unknown|1985|No|
+
+
 
