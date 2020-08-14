@@ -330,6 +330,57 @@ The Illionois department of public health reviews and issues permits for well co
 |----|----|----|----|----|----|----|----|
 |590,726|	285,436 |N|Y|N|2/1/2017|1967|Yes|
 
+## Indiana
+
+**Notes**
+
+The Water Rights and Use Section currently maintains, in original paper and digital form, the records of over 400,000 water wells drilled in Indiana. Of this number approximately 138,000 records have been field verified.
+
+[Link to Data](https://secure.in.gov/apps/dnr/dowos/WaterWell.aspx)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|Unknown|Unknown|Unknown|Unknown|Unknown|Unknown|1999|No|
+
+## Iowa
+
+**Description**
+
+A combination of multiple well databases in Iowa (many duplicates) including Agricultural drainage, IGS, and Private well tracking system.
+
+**Location Requirements**
+
+567—49.6(455B) Earthen manure storage basin / runoff control basins / anaerobic lagoons: 1000, Domestic wastewater lagoon: 400, Sanitary landfills: 1000, Preparation or storage area for spray materials / commercial fertilizers / chemicals that may result in groundwater contamination: 100, Drainage wells: 1000, Conforming wells: 10, Nonconforming wells: 100, Soil absorption field / any sewage treatment system with an open discharge / pit privy or septic tank discharge line: 100, Septic tank / concrete vault privy / sewer of tightly joined tile or equivalent material / sewer-connected foundation drain / sewers under pressure: 50,  Sewer of cast iron with leaded or mechanical joints / sewer of plastic pipe with glued or compression joints / independent clear water drains / cisterns / well pits / pump house floor drains: 10, Hydrants: 10, Property lines: 4, Liquid hydrocarbon storage tanks: 100, Ditches / streams / ponds / lakes: 25 Frost pit: 10
+
+**Notes**
+
+Well construction permitting and reporting were handled by counties prior to 2002. Prior to 2002, well reporting was taking place but it was not statewide.
+
+[Link to Data](https://programs.iowadnr.gov/pwts/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|353,401|113,011|N|Y|Y|4/1/2015|2002|No|
+
+## Kansas
+
+**Description**
+
+
+**Location Requirements**
+
+K.A.R. 28-30-8(a): The horizontal distances between the well and the potential source of pollution or contamination such as sewer lines, pressure sewer lines, septic tanks, lateral fields, pit privy, seepage pits, fuel or fertilizer storage, pesticide storage, feed lots or barn yards shall be 50 feet or more as determined by the department. Proper drainage in the vicinity of the well shall be provided so as to prevent the accumulation and ponding of surface water within 50 feet of the well. The well shall not be located in a ravine or any other drainage area where surface water may flow into the well. (c) When sewer lines are constructed of cast iron, plastic or other equally tight materials, the separation distance shall be 10 feet or more as determined by the department. (d) All wells shall be 25 feet or more from the nearest property line, allowing public right-of-ways to be counted; however, a well used only for irrigation or cooling purposes may be located closer than 25 feet to an adjoining property.
+
+[Link to Data](http://www.kgs.ku.edu/Magellan/WaterWell/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|262,586|70,214|N|Y|Y|1/3/2017|1974|Yes|
+
+
+
+
+
 
 
 	
