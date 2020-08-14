@@ -253,3 +253,44 @@ Records can be queried, however a complete dataset could not be obtained
 No records could be found
 
 
+## Georgia
+
+**Description**
+
+Georgia considers domestic well locations private information and does not disclose records publicly.
+
+**Location Requirements**
+
+10 feet from a sewer line, 50 feet from a septic tank, 100 feet from a septic tank absorption field, 150 feet from a cesspool or seepage pit, 100 feet from an animal or fowl enclosure.
+
+**Reporting Requirements**
+
+"prior to actual construction, the water well contractor must notify the county health department of the intent to drill a water well, providing such information as is required on forms prepared by the Water Well Council" (Georgia Water Well Standards Act of 1985, 12-5-134).
+
+**Notes**
+
+Georgia no longer permits public access to paper water well records due to restrictions for homeland security and because of the Privacy Act.
+
+## Hawaii
+
+**Description**
+
+The Hawaii commission on water resource management controls well permitting but the data for wells was compiled and published by the Hawai'I Groundwater & Geothermal Resources Center.
+
+**Location Requirements**
+
+"New wells shall be sited the maximum distance possible from sources of pollution. Some possible pollution sources include wastewater lines, cesspools, septic tanks, wastewater leaching fields, landfills, chemical storage and injection wells." (HAWAII Well Construction
+& Pump Installation STANDARDS 2.3)
+
+**Reporting Requirements**
+
+Permits are required for well construction and pump installation. The first edition of standards was published in 1997, and was revised in 2004
+
+
+[Link to Data](http://www.higp.hawaii.edu/csav/WaterWells/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|4,760|	Unknown |N|Y|N|2014|1997|No|
+
+
