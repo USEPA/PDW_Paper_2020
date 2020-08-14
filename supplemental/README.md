@@ -293,4 +293,27 @@ Permits are required for well construction and pump installation. The first edit
 |----|----|----|----|----|----|----|----|
 |4,760|	Unknown |N|Y|N|2014|1997|No|
 
+## Idaho
+
+**Description**
+
+Permitting is regulated by The Idaho Department of Water Resources. 
+
+**Location Requirements**
+
+Existing Public Water Supply well, separate ownership - 50’, Other existing well, separate ownership - 25’, Septic drain field - 100’, Septic tank - 50’, Drainfield of system with more than 2,500 GPD of sewage inflow - 300’, Sewer line - main line or sub-main, pressurized, from multiple sources - 100’, Sewer line - main line or sub-main, gravity, from multiple sources - 50’, Sewer line - secondary, pressure tested, from a single residence or building - 25’, Effluent pipe - 50’, Property line - 5’, Permanent buildings, other than those to house the well or plumbing apparatus, or both - 10’, Above ground chemical storage tanks - 20’, Permanent (more than six months) or intermittent (more than two months) surface water - 50’, Canals, irrigation ditches or laterals, & other temporary (less than two months) surface water - 25’ (IDAPA 37.03.09)
+
+**Reporting Requirements**
+
+"Prior to beginning construction of any well, or changing the construction of any well, the driller or well owner shall obtain a permit from the director of the department of water resources to protect the public health, safety and welfare and the environment, and to prevent the waste of water or mixture of water from different aquifers." (Idaho Statue 42-235, 1987)
+
+[Link to Data](https://research.idwr.idaho.gov/index.html#GIS-Data)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|174,450|	163,662 |Y|Y|N|12/30/2016|1987|Yes|
+
+
+
+	
 
