@@ -485,6 +485,133 @@ Property Line: 10', Public/Private Roadway: 25', Right Of Way: 15', Sewer line/s
 |186,342|92,457|Y|Y|N|1/27/2017|1989|No|
 
 
+## Michigan
+
+**Description**
+
+The Wellogic system is operated by the Michigan department of environmental quality.  Since 2000, well drillers have input records directly to the database. Records from earlier than 2000 were added by MDEQ.
+
+**Location Requirements**
+
+"R 325.1622 Wells; distances from contamination sources. Rule 122. (1) A well that furnishes water for any beneficial use shall be located where it is not subject to contamination.     800 feet from: The active work area of a landfill, Land surface application of septage waste.
+300 feet from: Land application or subsurface injection of effluent or digested sludge from a municipal wastewater treatment facility, Oil and gas wells, Petroleum product processing or storage facilities.
+150 feet from: a preparation or storage area for fertilizers, agricultural chemicals, or other chemicals that might contaminate the soil or groundwater.
+50 feet from: A buried sewer, A septic tank, A subsurface disposal field, A dry well, A sewage pump chamber, A pressurized sewer, A grease trap, A seepage pit, A cesspool, An animal or poultry yard, An outhouse, Any other wastewater handling or disposal unit or site of liquid wastes draining into the soil. 10 feet from: A buried gravity-flow sewer, A sump, pit, or unfilled space that is below the ground surface, except for a crawl space, A surface water body, such as a lake, pond, river, or stream.
+USTs:
+300 feet: Underground or abovegrade storage tank systems of not less than 1100 gallons which are regulated under Act No. 423 of the Public Acts of 1984, as amended, being '299.701 et. seq. of the Michigan Compiled Laws, when secondary containment as defined by Act No. 423 of the Public Acts of 1984, as amended, is not provided.
+50 feet from underground or abovegrade storage tank systems which have a capacity of not less than 1,100 gallons, which are regulated pursuant to the provisions of Act No. 423 of the Public Acts of 1984, as amended,
+being '299.701 et seq. of the Michigan Compiled Laws, and which have secondary containment as defined in Act No. 423 of the Public Acts of 1984, as amended.
+50 feet: underground or above grade storage tank systems which have a capacity of less than 1,100 gallons and which store motor or heating fuels for noncommercial purposes or consumptive use on the premises where the fuel is stored."
+
+**Reporting Requirements**
+
+"333.12707  Record required; contents; copies; forms; sufficiency of record for drive point well. Sec. 12707. Not later than 60 days after the completion of a well, a well drilling contractor shall provide the owner with a copy and the department, or local health department, with 2 copies of a record indicating the well owner's name, location of the well, well depth, geologic materials and thicknesses of materials penetrated, amount of casing, static water levels, and any other information which may be required by the rules and construction code promulgated under section 12714.  The department or local health department shall sent 1 copy of the record to the director of the department of natural resources not later than 30 days after its receipt from the well drilling contractor."
+
+[Link to Data](http://gis.michigan.opendata.arcgis.com/datasets?q=Wellogic&sort_by=relevance)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|592,236|527,875|Y|Y|Y|1/27/2017|1978|Yes|
+
+## Minnesota
+
+**Description**
+
+Obtained database access from Minnesota Geological Survey. The data is a full copy of the Minnesota County Wells Index database.
+
+**Location Requirements**
+
+4725.4450 WATER-SUPPLY WELL DISTANCES FROM CONTAMINATION SOURCE:  300 feet: Absorption area of a soil dispersal system with an avg design flow > 10,000 gpd / landfill / permitted demolition debris landfill / municipal or industrial wastewater rapid infiltration basin / municipal wastewater stabilization pond with > 500 gallons per acre per day leakage / liquid manure storage basin that is unpermitted.                150 feet: tank or container holding > 25 gallons or 100 pounds of agricultural chemicals / >56 gallons or 100 pounds of a hazardous substance not protected with safeguards / >1,100 gallons of petroleum / absorption area of a soil dispersal system serving a facility such as a hospital, nursing home, mortuary, veterinary clinic etc... /  an industrial wastewater stabilization pond / a municipal or industrial wastewater spray irrigation area / a liquid manure storage basin.                100 feet from: a solid manure storage area not covered with a roof, except that the minimum distance to a sensitive water-supply well is increased to 200 feet / a safeguarded area used to store agricultural chemicals, or clean or fill agricultural chemical application equipment that is protected with safeguards /  an underground storage tank holding 56 or more gallons, or 100 pounds dry weight, of a hazardous substance, or with more than 1100 gallons of petroleum.   (Many specifics written into law... refer to MN 4725.4450 for full definitions).               Petroleum tank specifics:  Tanks over 1,100 gallons: 150 feet without MPCA safeguards / 100 feet with safeguards.   Tanks 56 to 1,100 gallons: 50 feet for below-ground tanks / 20 feet for above-ground tanks.     Tanks 56 gallons or less: No required distance, but 50 feet  recommended.
+
+
+**Notes**
+	Minnesota has required the disclosure of wells at the transfer of property since 1990, records available at: http://www.health.state.mn.us/divs/eh/wells/disclosures/index.html
+
+[Link to Data](https://www.health.state.mn.us/communities/environment/water/mwi/index.html)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|511,403|368,734|N|Y|Y|2/3/2017|1974|Yes|
+
+## Mississippi
+
+**Description**
+
+
+**Location Requirements**
+
+
+**Reporting Requirements**
+
+
+**Notes**
+	
+Spoke with a representative at MDEQ who provided a download link of current records.  They were adamant that there was a lot of information missing, however data seems to go back well into the early 1960's and some records are older than that.
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|100,446|Unknown|N|Y|Y|Unknown|Unknown|No|
+
+## Missouri
+
+**Description**
+
+This data does not come directly from Missouri DNR which is responsible for collecting well logs.  It comes from the Missouri Spatial Data Information Service which collects and distributes Missouri focused data.  This organization is run out of the University of Missouri.
+
+**Location Requirements**
+
+Storage area for commercial fertilizers or chemicals: 300’. Demolition landfill: 300’, Wastewater treatment plant or lagoon that serves commercial facilities, subdivisions, or mobile home parks: 300’. Above ground or underground storage tank: 300’. Tank distribution lines for liquid petroleum, petroleum products, or chemicals: 300’. Earthen, concrete, or other manure storage structures or lagoons: 300’. Land application areas for domestic or animal waste: 300’. Animal composting facilities: 300’. Unplugged abandoned wells: 100’. Subsurface wastewater disposal field, grave, residential lagoon, privy, lift station, or pressurized sewer line: 100’. Animal Feeding Operation (AFO): 100’. An animal composting facility constructed with a concrete floor cell design covered with a roof: 100’. Dry litter storage within a building: 100’. Other areas with contaminants that may leach into the groundwater: 100’. Septic tank or wastewater holding tank: 50’. Pit or cistern: 50’. Existing operating well: 50’. Non-pressurized buried sewer line: 25’. Solid waste disposal area, sanitary landfill, special waste landfill, utility waste landfill, waste stabilization pond (lagoon), or hazardous waste treatment, storage, or disposal facility: 1000’
+
+[Reporting Requirements](https://dnr.mo.gov/geology/geosrv/wellhd/documents/2019mwcr-update.pdf)
+
+[Link to Data](http://www.msdis.missouri.edu/data/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|227,717|137,930|N|Y|Y|11/23/2015|1987|Yes|
+
+## Montana
+
+**Description**
+
+The Ground Water Information Center in Montana regularly updates their well database with all Montana water well reports.
+
+**Location Requirements**
+
+“At a minimum, a well should be 10 feet from the property line, 50
+feet from any septic tank or sewer lines, and 100 feet from the
+drain field.” (see pdf in notes)
+
+**Reporting Requirements**
+
+“State law requires that a copy of the well log be submitted to the
+Montana Bureau of Mines and Geology within 60 days after completion of the well by the driller. The driller is also required to supply a copy of the completed well log to the well owner.”
+
+**Notes**
+
+Extensive information is provided in the document [here](http://dnrc.mt.gov/divisions/water/operations/board-of-water-well-contractors/divisions/water/operations/docs/bwwc/waterwelldrillowner.pdf)
+
+[Link to Data](http://mbmggwic.mtech.edu/sqlserver/v11/menus/menuData.asp?pagename=zipper)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|285,141|157,729|N|Y|Y|2/2/2017||Yes|
+
+## Nebraska
+
+**Description**
+
+Nebraska Department of Natural Resources registered groundwater wells database.
+
+**Notes**
+
+May be suitable for RW method if starting at 2000. Regulations can be found here: https://dnr.nebraska.gov/groundwater/faqs
+
+[Link to Data](http://dnr.nebraska.gov/groundwater-data)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|231,115|231,115|Y|Y|Y|2/6/2017|1993|No|
 
 
 
