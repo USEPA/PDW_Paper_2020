@@ -200,5 +200,56 @@ Unknown
 |----|----|----|----|----|----|----|----|
 |Unknown|	Unknown |Unknown|Unknown|Unknown|Unknown|1985|No|
 
+## Florida (NW)
+
+**Description**
+
+
+**Location Requirements**                                                                                                                                   Florida (NW) maintains an extensive list of location requirements available [here](http://www.nwfwater.com/Permits/Well-Permits/Data-Setbacks-Fees-Maps)
+
+
+**Reporting Requirements**
+
+
+**Notes**
+
+Counties included: Bay,  Calhoun,  Escambia,  Franklin, Gadsden,  Gulf,  Holmes,  Jackson, Jefferson,  Leon,  Liberty,  Okaloosa, Santa Rosa,  Wakulla,  Walton,  Washington    Florida has listed some 'No Drilling' areas which are available on their data page. NW Florida seems to have corrupted XY coordinates for their well locations which have been located.  In response to this, we have disregarded XY locations and run the entire database through the Navteq geocoding service to locate the residences using wells.
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|73,722|	Unknown |Y|Y|N|Unknown|1995|No|
+
+## Florida (Saint Johns)
+
+**Description**
+
+These data were supplied directly via ftp download as a layer package from the Office of information technology services at the Saint Johns River Water Management District. Well completion reports can also be looked up via the url below.
+
+[Link to Data](https://permitting.sjrwmd.com/epermitting/jsp/SearchWellCmple.do?theAction=init)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|265,120|	83,326 |Y|Y|N|9/29/2015|Unknown|No|
+
+## Florida (South)
+
+**Description**
+
+No data could be located for Florida (south)
+
+## Florida (Southwest)
+
+**Description**
+
+Records can be queried, however a complete dataset could not be obtained
+
+[Link to Data](http://www18.swfwmd.state.fl.us/search/search/wcpsimple.aspx)
+
+
+## Florida (Suwanee River)
+
+**Description**
+
+No records could be found
 
 
