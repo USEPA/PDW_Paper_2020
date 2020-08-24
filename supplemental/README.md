@@ -952,6 +952,59 @@ Spacing for wells for which water permits are required may be determined individ
 |----|----|----|----|----|----|----|----|
 |34,570|34,570|N|N|Y|4/4/2017|1974|No|
 
+## Tennessee
+
+**Description**
+
+**Location Requirements**
+
+Sewage Lagoons; Leaching Pits: ---------------------- 200 feet 
+Animal Pens; Feed Lots: ------------------------------- 100 feet 
+Sludge; Sewage Disposal Sites ------------------------100 feet 
+Pit Privies ------------------------------------------------- 75 feet 
+Sewer Lines -----------------------------------------------50 feet 
+Septic Tanks; Drain Fields ------------------------------ 50 feet 
+House to Septic Tank Connections (Tightline)-------10 feet
+
+[Source](https://www.tn.gov/environment/program-areas/wr-water-resources/water-quality/well-water.html)
+
+**Reporting Requirements**
+
+0400-45-09-.10 WELL CONSTRUCTION STANDARDS 
+“Every well driller, within sixty (60) days after completion of a water well, shall submit a
+report on the construction or reconstruction of the well to the Department. The well
+completion report shall be made on a form provided by the Department or a reasonable
+facsimile approved by the Department."
+
+**Notes**
+
+Tennessee has kept well logs since the 1970's but the responsible agency has changed at least twice and not all records have been properly retained.  Records since the mid 90's are considered relatively complete, but there are issues with underreporting from drillers (as with many other states). 
+
+## Texas
+
+**Description**
+
+[The Submitted Drillers Reports (SDR) Database](https://www.twdb.texas.gov/groundwater/data/drillersdb.asp#:~:text=The%20Submitted%20Drillers%20Report%20(SDR,drillers%20use%20to%20submit%20their): 
+“The Submitted Drillers Report (SDR) Database is populated from the online Texas Well Report Submission and Retrieval System (TWRSRS) which is a cooperative Texas Department of Licensing and Regulation (TDLR) and Texas Water Development Board (TWDB) application that registered water-well drillers use to submit their required reports. This system was started 2/5/2001 and began collecting all reports in 2003. Be aware that the locations of the wells in this database are not verified by State staff and may be inaccurate. Updated Nightly"
+
+**Location Requirements**
+
+
+**Reporting Requirements**
+
+[Sec. 1901.251. Well Log.](https://casetext.com/statute/texas-codes/occupations-code/title-12-practices-and-trades-related-to-water-health-and-safety/subtitle-a-occupations-related-to-water/chapter-1901-water-well-drillers/subchapter-f-practice-by-license-holder/section-1901251-well-log)
+
+(a) Each driller who drills, deepens, or otherwise alters a water well in this state shall make and keep a legible and accurate well log in accordance with rules adopted by the commission and on forms prescribed by the executive director. The well log shall be recorded at the time of drilling, deepening, or otherwise altering the well and must contain:
+
+(1) the depth, thickness, and character of the strata penetrated; (2) the location of water-bearing strata; (3) the depth, size, and character of casing installed; and (4) any other information required by rules adopted by the commission.
+(b) Not later than the 60th day after the date of the completion or cessation of drilling, deepening, or otherwise altering the well, the driller shall deliver, send by first class mail, or provide electronically a copy of the well log to: (1) the department; (2) the Texas Commission on Environmental Quality; and (3) the owner of the well or the person for whom the well was drilled."
+
+[Link to Data](http://www.twdb.texas.gov/groundwater/data/drillersdb.asp)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|441,486|171,649|Y|Y|N|5/31/2017|2003|No|
+
 
 
 
