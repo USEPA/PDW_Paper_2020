@@ -623,8 +623,9 @@ Description
 
 **Reporting Requirements**
 
-	"NRS 534.170 Well driller to keep log and records; contents; information to be furnished to State Engineer; report of test.
-      1. The well driller shall keep:
+NRS 534.170 Well driller to keep log and records; contents; information to be furnished to State Engineer; report of test.
+
+1. The well driller shall keep:
       (a) A log of the depth, thickness and character of the different strata penetrated and the location of water-bearing strata; and
       (b)An accurate record of the work, including:
              (1)A statement of the date of beginning work;
@@ -635,13 +636,16 @@ Description
              (6)The name of the well driller and the type of drilling machine used;
              (7)The number of cubic feet per second or gallons per minute of flow from such well when completed; and
              (8)The pressure in pounds per square inch if it is a flowing well, and, if nonflowing, the static water level, and the water temperature.
-      2.The well driller shall furnish a copy of the log and the record of work for every well drilled to the State Engineer within 30 days after the well is completed.
-      3.If the well is to be tested by pumping by the holder of the permit, the report of the test must include the drawdown with respect to the amount of water pumped and any additional information requested by the State Engineer. This information must be reported and verified on forms prescribed by the State Engineer. The report must be returned:
+      
+2.The well driller shall furnish a copy of the log and the record of work for every well drilled to the State Engineer within 30 days after the well is completed.
+      
+3.If the well is to be tested by pumping by the holder of the permit, the report of the test must include the drawdown with respect to the amount of water pumped and any additional information requested by the State Engineer. This information must be reported and verified on forms prescribed by the State Engineer. The report must be returned:
       (a)Immediately following the completion of the test; or
-      (b)Within 30 days following the completion of the well,
-Ê whichever occurs later.
-      4.The log, record of the work and report of the test are a permanent record in the Office of the State Engineer.
-      [Part 7a:178:1939; added 1947, 52; A 1955, 328] — (NRS A 1981, 1842)"
+      (b)Within 30 days following the completion of the well,whichever occurs later.
+      
+4.The log, record of the work and report of the test are a permanent record in the Office of the State Engineer.
+
+[Part 7a:178:1939; added 1947, 52; A 1955, 328] — (NRS A 1981, 1842)
 
 
 [Link to Data](http://water.nv.gov/welllogquery.aspx)
