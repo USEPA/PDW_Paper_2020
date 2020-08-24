@@ -1005,6 +1005,179 @@ Tennessee has kept well logs since the 1970's but the responsible agency has cha
 |----|----|----|----|----|----|----|----|
 |441,486|171,649|Y|Y|N|5/31/2017|2003|No|
 
+## Utah
+
+**Description**
+
+The WRPOD shapefile is primarily used by the Division of Water Rights as a complete record of point of diversion locations. The shapefile  is generated nightly  from basic information in the Water Rights tabular database
+
+**Location Requirements**
+
+Rule R655-4-10.2 the licensee should also be familiar with local zoning ordinances, or county boards of health requirements which may limit or restrict the actual well location and construction in relationship to property/structure boundaries and existing or proposed concentrated sources of pollution or contamination such as septic tanks, drain fields, sewer lines, stock corrals, feed lots, etc. The licensee should also be familiar with the Utah Underground Facilities Act (Title 54, Chapter 8a of the Utah Code Annotated 1953 as amended) which requires subsurface excavators (including well drilling) to notify operators of underground utilities prior to any subsurface excavation.
+
+**Reporting Requirements**
+
+R655-4-4.1
+“The well driller shall make certain that a valid authorization or approval to drill exists before engaging in regulated well drilling activity. Authorization to drill shall consist of a valid 'start card' based on any of the approvals listed below. Items 4.1.1 through 4.1.12 allow the applicant to contract with a well driller to drill, construct, deepen, replace, repair, renovate, clean, develop, or abandon exactly one well at each location listed on the start card or approval form. The drilling of multiple borings/wells at an approved location/point of diversion is not allowed without authorization from the state engineer's office. Most start cards list the date when the authorization to drill expires. If the expiration date has passed, the start card and authorization to engage in regulated drilling activity is no longer valid. If there is no expiration date on the start card, the driller must contact the state engineer's office to determine if the authorization to drill is still valid. When the work is completed, the permission to drill is terminated. Preauthorization or pre-approval of pump installation/repair work is not required."
+
+[Link to Data](https://www.waterrights.utah.gov/gisinfo/wrpod.htm)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|326,298|12,645|N|Y|Y|6/1/2017|Unknown|No|
+
+## Vermont
+
+**Description**
+
+Private wells in this layer come from the Department of Environmental Conservation's Water Supply Data Composite. Managed by the Water Supply Division's Well Driller and Well Location Program, the database contains private well information submitted by Vermont licensed well drillers. Licensed well drillers have been required to submit well completion reports (well logs) to the state since 1966. Well tags have been required since 1986. NOTE: the data contained here is only as accurate as what was submitted - many wells were completed, but not reported, many reports have missing information, were recorded inaccurately or poorly located geographically.
+
+**Location Requirements**
+
+VERMONT ANR-DEC ENVIRONMENTAL PROTECTION RULES, WATER SUPPLY RULE: CHAPTER 21, APPENDIX A, PART 12   12.2.1.1 
+Buildings 10 ft.
+Edge of driveway serving fewer than 3 residences 15 ft.
+Property line 10 ft.
+Roadway shoulder, parking lot edge 25 ft.
+Surface Water 25 ft.
+Subsurface wastewater piping (sewer and related tanks (septic)) 25 ft.
+Limit of herbicide application, i.e. utility ROW 100 ft.
+Concentrated livestock holding areas, or manure storage 200 ft. 
+Down slope sewage system disposal facilities (fields, beds, drywells, injection wells, etc.) 100 ft. 
+Up slope sewage system disposal facilities 100 ft.
+Hazardous or solid waste disposal sites 200 ft.
+
+**Reporting Requirements**
+
+Environmental Protection Rules Chapter 15 (Revision to September 18, 1986 rule): 15-701 Each licensee shall file a report with the Department and well owner on each water well constructed, including but not limited to the name of the owner, location, depth, character of rocks or earth formations and fluids encountered, and other reasonable and appropriate information the Department may require.  All well completion reports shall be signed by a Vermont licensed well driller.
+
+[Link to Data](http://anrgeodata.vermont.gov/datasets/private-wells)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|105,248|105,248|N|Y|N|1/18/2017|1966|Yes|
+
+## Virginia
+
+**Reporting Requirements**
+
+The Code of Virginia §62.1-258 requires that certified water well system providers submit to the Virginia Department of Environmental Quality a water well completion report form for any private well constructed within a Virginia Groundwater Management Area within 30 days of construction.
+
+**Notes**
+
+A comprehensive well database is currently being compiled but was not available at the time of this publication: http://www.deq.virginia.gov/Programs/Water/WaterSupplyWaterQuantity/GroundwaterCharacterization/WellDatabase.aspx
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|||||||1973|No|
+
+## Washington
+
+**Description**
+
+Points are located by 1/4 1/4 section centroid. Points contain all well log types including water wells, resource protection wells, and decommissioned wells.
+
+**Location Requirements**
+
+173-160 of the Washington Administrative Code (WAC)
+Building or Structure Drip line 5 ft
+Septic Tank 50 ft
+Building Sewer 50 ft
+Septic Drain Field 100 ft
+Permitted Landfill Boundary 1000 ft
+
+**Reporting Requirements**
+
+"A Notice of Intent to Construct a Well form to Ecology at least 72 hours prior to well
+construction along with the appropriate fee. Notice of Intent forms are available through any
+Ecology office and licensed well drillers. The forms can be filled out by the property owner or the well driller"
+
+**Notes**
+
+Well records go back to the early 1900's but it doesn't seem possible to distinguish between types of wells.
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|728,969|NA|Y|Y|Y|4/21/2016|1987|No|
+
+## West Virginia
+
+**Location Requirements**
+
+"WV 64CSR46:  (64-46-4)
+property line:10 ft. 
+Existing or potential contamination: as far as possible.
+May not terminate within a building or below ground level.
+
+**Reporting Requirements**
+
+64-19-5  (https://www.wvdhhr.org/phs/water/historical/64CSR19_-_Water_Well_Regulations.pdf)
+“Within thirty (30) calendar days after the water well has been constructed, altered, or abandoned, the certified well driller shall submit a completion report to the Comissioner.  The date of construction and time of completion is the date and time the rig is removed or pulled off the borehole or well.  The certified well driller who actually performed the construction, alteration or abandonment of the well or provided the onsite supervision of the well construction, alteration or abandonment shall sign the completion report.  A master well driller is required to sign the completion report when a journeyman well driller conducts the on-site supervision and drilling."
+
+**Notes**
+
+While drilling records are required to be filed upon the drilling of a new, or the altering of an existing well, records appear to be filed at the county level.  The form does provide space for gps coordinates and these records have been required since at least 1984.  It is unclear how many records would exist in digital vs. paper format but there appears to be no online submission system indicating that paper copies are most likely to be the primary form of reporting.
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|NA|NA|N|Y|N|Unknown|1987|No|
+
+## Wisconsin
+
+**Location Requirements**
+
+Extensive list provided in [NR 812.08](https://docs.legis.wisconsin.gov/code/admin_code/nr/800/812.pdf#page=10)
+
+**Reporting Requirements**
+
+Well records are required to be submitted by drillers.
+Notes. The downloadable database includes a wealth of information on well construction but does not have location data.
+
+[Link to Data](https://prodoasext.dnr.wi.gov/inter1/watr$.startup)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|136,300|Unknown||||Unknown|1936|No|
+
+## Wyoming
+
+**Description**
+	
+Wyoming retains a general shapefile which was last updated in April 2016.  However, they have a queryable database which appears to be updated either daily or weekly.  The data can be exported to excel and can be converted into GIS format from there. The Wyoming state engineer's office makes note that most well locations are at a resolution of a plss quarter-quarter section (40-acres).  They make it very clear that these data should be considered for regional analysis and not mistaken for perfect positional accuracy.
+
+**Location Requirements**
+
+Rules are set forth by the [Water Well Minimum Construction Standards Document](https://2ce3bd20-a-84cef9ff-s-sites.googlegroups.com/a/wyo.gov/seo/seo-files/WaterWellMinimumConstructionStandards.pdf?attachauth=ANoY7co227tWqpxiIq56mO0So0arkDIK3tAXxDxeu_-10wA07UiDNwPGn01U9dsfsqpuSHWtErx4W5fCQHgtmrIgTuJ2Q0_eatCUjJA4F_oYb66RDeNv2uoi7XisXYqgxSPkrRrXgJ7snho--zNq-rkwaxu_cFuramVEanIYDnDb3orjnS3GD8TcPQ2hMrpiLj4aw1hErq7bYYRdeAJPjKp9sxlnRvDNp8dmkDwcb4mO3-K1pV7Uo4N6IaoMxXZ9SzeLvHYMMRHG&attredirects=0)
+
+(Given authority by Wyoming 41-3-909)
+
+Livestock Containment Pens: 50 feet
+Livestock Sewage Lagoons: 50 feet
+Sewer: 50 feet
+Septic Tank: 50 feet
+Disposal (Leach) Field: 100 feet
+
+**Reporting Requirements**
+
+"W.S. 41-3-930: ""Any person who intends to acquire the right to beneficial use of any underground water in the state of Wyoming, shall, before commencing construction of any well or other means of obtaining underground water or performing any work in connection with construction or proposed appropriation of underground water or any manner utilizing the water for beneficial purposes, file with the state engineer an application for a permit to make the appropriation and shall not proceed with any construction or work until a permit is granted by the state engineer...""
+
+From state engineers website: "The 1947 legislature enacted the State's first groundwater laws. Although the legislation was not extensive, it did for the first time, require the owners of any groundwater wells drilled in the state prior to April 1, 1947 to register their wells by a "Statement of Claim" with the office of the State Engineer. It also required that any new well proposed to be drilled after that date (except those for stock or domestic uses) must also be registered, and thus began the application of the prior appropriation system to groundwater use in Wyoming. Well filings made under a statement of claim could receive their priority based on the claimed date of completion of the well, going back as far in time as could be justified, while registrations of wells after April 1, 1947 would receive a priority as of the date their new filing was made with the State Engineer. A process for adjudication of wells was also included in the legislation"
+
+[Link to Data](http://seo.wyo.gov/documents-data/maps-and-spatial-data)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|158,678|74,435|N|Y|Y|4/19/2016|1947|Yes|
+
+
+
+
+
+
+
+
+
+
 
 
 
