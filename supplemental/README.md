@@ -792,6 +792,25 @@ must remain the property of the board."
 |102,907|28,638|N|Y|N|3/16/2017|1982|No|
 
 
+## Ohio
+
+**Description**
+
+Access Database obtained from ODNR includes domestic well records going back to the 1940's.  ODNR possesses more than 800,000 well logs however the missing ones from this data have not been digitized.
+
+**Location Requirements**
+
+Setbacks: Fuel storage tanks under 1,100 gallons (50 feet), Fuel storage tanks over 1,100 gallons (150 feet). Fuel storage tanks over 1,100 gallons with no secondary containment (300 feet).  Additional requirements: https://codes.ohio.gov/oac/3701-28-07v1 (Ohio Revised Code 3701-28-07 )
+
+**Reporting Requirements**
+
+Well completion reports must be submitted in compliance with Ohio revised code 1521.05: https://codes.ohio.gov/orc/1521.05
+
+[Link to Data](https://apps.ohiodnr.gov/water/maptechs/wellogs/appNEW/)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|443,968|443,968|Y|Y|N|10/1/2015|1981|Yes|
 
 
 
