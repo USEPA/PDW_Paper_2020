@@ -814,6 +814,71 @@ Well completion reports must be submitted in compliance with Ohio revised code 1
 
 
 
+## Oklahoma
+
+**Description**
+
+OWRB maintains very good records of well drilling reports which were updated about once a month at the time of download
+
+**Location Requirements**
+
+"Oklahoma Administrative Code 785:35-7-1:  Minimum location standards.  (1) Every new groundwater well, fresh water observation well and water well test hole shall be located a minimum distance from possible pollution sources as prescribed in this subsection or as otherwise authorized by a variance granted by the Executive Director. Possible pollution sources include but are not limited to existing or proposed septic tanks, sewer lines, absorption fields or beds, seepage pits, building foundations, waste pits, lagoons, oil or gas wells, and landfills. The minimum distance between the possible pollution source and the well or test hole shall be as follows, provided that other governmental agencies may require wells to be located at distances greater than the minimum distances set forth in this paragraph:  (A) 10 feet from a closed or tight sanitary sewer line, 25 feet from aerobic (above ground) sprinkler spray, and 50 feet from an aerobic sprinkler head, (B) 300 feet from the outside perimeter of an existing or proposed waste lagoon for a  feedlot or confined animal feeding operation, and  (C) 50 feet from all other pollution sources, provided however, if the well is 50 feet to  75 feet and located down-gradient or level from a possible source of pollution, a twenty  foot (20') surface seal shall be installed, and  (D) 75 feet from all other pollution sources if the well is level with the pollution source and 100 feet from all other pollution sources if the well is located down-gradient from the  pollution source."
+
+**Reporting Requirements**
+
+Oklahoma 785:35-5-3: Requirements for multi-purpose completion report Each licensee or certified operator as the case may be shall file a multi-purpose completion report for each groundwater well, water well test hole, fresh water observation well, or heat exchange well completed or plugged. The report shall be on forms provided by the Board or electronically online and shall be filed within sixty (60) days after the date of completion or plugging. Each licensee or certified operator as the case may be shall file a multi-purpose completion report electronically online for each monitoring well, site assessment observation well and geotechnical boring within sixty (60) days after the date completed or plugged. Information regarding multiple monitoring wells, geotechnical borings and heat exchange wells may be accumulated together in a single report if all of the excavations are located in the same ten-acre tract, have substantially the same lithology encountered in the subsurface, and have substantially the same depth and construction. If more than one boring or well is included on a multi-purpose completion report, a site map shall be attached to the report which indicates the distance of each well or boring from permanent reference points such as streets, roads or section lines. Provided, a report need not be filed for a geotechnical boring 20 feet deep or less in which groundwater or contamination is not present. Effective July 1, 2009, all multi-purpose completion reports shall be submitted with latitude and longitude data. [Source: Amended at 19 Ok Reg 2498, eff 6-27-02; Amended at 25 Ok Reg 1444, eff 5-27-08; Amended at 28 Ok Reg 987, eff 7-1-11]
+
+[Link to Data](http://www.owrb.ok.gov/maps/PMG/owrbdata_GW.html)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|178,650|70,655|Y|Y|Y|4/2/2017|1984|Yes|
+
+## Oregon
+
+**Description**
+
+Searchable well database available online, with download feature.  Most records do not have GPS coordinates.
+
+**Location Requirements**
+
+OAR 690-210-0030: (1) No person shall construct a water supply well: (a) Within 50 feet of any septic tank; or (b) Within 100 feet of a septic drainline or sewage disposal structure or facility; or (c) Within 50 feet of a closed sewage or storm drainage system (except those in or underneath a building); or (d) Within 50 feet of a confined animal feeding or holding area; or (e) Within 50 feet of any animal waste holding area such as a pond or lagoon; or (f) Within 100 feet of any sewage sludge disposal area; or (g) Within 5 feet from a permanent structure or the roof, eaves or overhangs of a permanent structure. This includes decks or other additions to the structure that may hinder the ability of a drilling machine to get over the well. This does not include pump houses or other outbuildings that are easily moved; or (h) Within 500 feet of a hazardous waste storage, disposal or treatment facility without written permission of the Director; or (i) Within 25 feet of an underground or aboveground petroleum storage tank that is used for residential purposes; or (j) Within 50 feet of an underground or aboveground petroleum storage tank that is used for commercial purposes.
+
+**Reporting Requirements**
+
+“Water supply well reports (also referred to as well logs or well reports) are prepared by a water well constructor and describe how the well was built, altered, deepened or abandoned. Well logs are to be provided to both the person who contracted the construction of the well and to OWRD. OWRD has copies of well logs for most water wells drilled in Oregon since 1955.” (https://www.oregon.gov/owrd/WRDPublications1/Well_Water_Handbook.pdf)
+
+[Link to Data](https://apps.wrd.state.or.us/apps/gw/well_log/Default.aspx)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|511,661|265,379|N|Y|Y|9/9/2015|1955|No|
+
+## Pennsylvania
+
+**Description**
+
+"PaGWIS is a repository of hundreds of thousands of water well records. Most of the well records have been submitted to the Bureau by water well drillers. Act 610, the Water Well Drillers License Act of 1955 (passed on May 29, 1956), began the statewide process of collecting groundwater data through the licensing of water well drillers. Starting in the mid-1960s, drillers sent paper water well completion reports to the Bureau. By the 1980s, reports were being entered into a digital database that has become PaGWIS." (http://dcnr.state.pa.us/topogeo/groundwater/pagwis/index.htm)
+
+**Location Requirements**
+
+Pennsylvania has no legal setback requirements at the state level but local authorities may impose specific regulations. More info can be found in the water well handbook: http://www.saferpa.org/Documents/Reports/PA-Water-Well-Handbook-01-15-2014_WebOptimized_FINAL.pdf
+
+**Reporting Requirements**
+
+Act 610, the Water Well Drillers License Act of 1955 (passed on May 29, 1956), began the statewide process of collecting groundwater data through the licensing of water well drillers. Starting in the mid-1960s, drillers sent paper water well completion reports to the Bureau. By the 1980s, reports were being entered into a digital database that has become PaGWIS.
+
+[Link to Data](https://www.dcnr.pa.gov/Conservation/Water/Groundwater/PAGroundwaterInformationSystem/Pages/default.aspx)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|551,328|290,891|Y|Y|N|3/13/2017|1955|No|
+
+
+
+
+
+
 
 
 
