@@ -800,11 +800,11 @@ Access Database obtained from ODNR includes domestic well records going back to 
 
 **Location Requirements**
 
-Setbacks: Fuel storage tanks under 1,100 gallons (50 feet), Fuel storage tanks over 1,100 gallons (150 feet). Fuel storage tanks over 1,100 gallons with no secondary containment (300 feet).  Additional requirements: https://codes.ohio.gov/oac/3701-28-07v1 (Ohio Revised Code 3701-28-07 )
+Setbacks: Fuel storage tanks under 1,100 gallons (50 feet), Fuel storage tanks over 1,100 gallons (150 feet). Fuel storage tanks over 1,100 gallons with no secondary containment (300 feet).  Additional requirements: [Ohio Revised Code 3701-28-07](https://codes.ohio.gov/oac/3701-28-07v1)
 
 **Reporting Requirements**
 
-Well completion reports must be submitted in compliance with Ohio revised code 1521.05: https://codes.ohio.gov/orc/1521.05
+Well completion reports must be submitted in compliance with Ohio revised code 1521.05: [Source](https://codes.ohio.gov/orc/1521.05)
 
 [Link to Data](https://apps.ohiodnr.gov/water/maptechs/wellogs/appNEW/)
 
@@ -846,7 +846,7 @@ OAR 690-210-0030: (1) No person shall construct a water supply well: (a) Within 
 
 **Reporting Requirements**
 
-“Water supply well reports (also referred to as well logs or well reports) are prepared by a water well constructor and describe how the well was built, altered, deepened or abandoned. Well logs are to be provided to both the person who contracted the construction of the well and to OWRD. OWRD has copies of well logs for most water wells drilled in Oregon since 1955.” (https://www.oregon.gov/owrd/WRDPublications1/Well_Water_Handbook.pdf)
+“Water supply well reports (also referred to as well logs or well reports) are prepared by a water well constructor and describe how the well was built, altered, deepened or abandoned. Well logs are to be provided to both the person who contracted the construction of the well and to OWRD. OWRD has copies of well logs for most water wells drilled in Oregon since 1955.” [Source](https://www.oregon.gov/owrd/WRDPublications1/Well_Water_Handbook.pdf)
 
 [Link to Data](https://apps.wrd.state.or.us/apps/gw/well_log/Default.aspx)
 
@@ -858,11 +858,11 @@ OAR 690-210-0030: (1) No person shall construct a water supply well: (a) Within 
 
 **Description**
 
-"PaGWIS is a repository of hundreds of thousands of water well records. Most of the well records have been submitted to the Bureau by water well drillers. Act 610, the Water Well Drillers License Act of 1955 (passed on May 29, 1956), began the statewide process of collecting groundwater data through the licensing of water well drillers. Starting in the mid-1960s, drillers sent paper water well completion reports to the Bureau. By the 1980s, reports were being entered into a digital database that has become PaGWIS." (http://dcnr.state.pa.us/topogeo/groundwater/pagwis/index.htm)
+"PaGWIS is a repository of hundreds of thousands of water well records. Most of the well records have been submitted to the Bureau by water well drillers. Act 610, the Water Well Drillers License Act of 1955 (passed on May 29, 1956), began the statewide process of collecting groundwater data through the licensing of water well drillers. Starting in the mid-1960s, drillers sent paper water well completion reports to the Bureau. By the 1980s, reports were being entered into a digital database that has become PaGWIS." [Source](http://dcnr.state.pa.us/topogeo/groundwater/pagwis/index.htm)
 
 **Location Requirements**
 
-Pennsylvania has no legal setback requirements at the state level but local authorities may impose specific regulations. More info can be found in the water well handbook: http://www.saferpa.org/Documents/Reports/PA-Water-Well-Handbook-01-15-2014_WebOptimized_FINAL.pdf
+Pennsylvania has no legal setback requirements at the state level but local authorities may impose specific regulations. More info can be found in the [water well handbook](http://www.saferpa.org/Documents/Reports/PA-Water-Well-Handbook-01-15-2014_WebOptimized_FINAL.pdf)
 
 **Reporting Requirements**
 
@@ -873,6 +873,84 @@ Act 610, the Water Well Drillers License Act of 1955 (passed on May 29, 1956), b
 |Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
 |----|----|----|----|----|----|----|----|
 |551,328|290,891|Y|Y|N|3/13/2017|1955|No|
+
+
+## Rhode Island
+
+**Description**
+
+Rhode Island department of health took over well completion records in 2013.  Records are filed in paper form and as of 2017, they had about 45,000, around 6,000 of which have been scanned, however no digital database exists for them.  In 2013, locations started to require GPS coordinates, mostly addresses prior to that. The E-911 GIS layer and the Public Water Display layer can create a water service buffer for the state of Rhode Island.  Using negative inference, it is possible to identify all buildings in the state that by default must be on well water.  The E-911 layer is available [here](http://www.rigis.org/datasets/e-911-sites).  The water system layer is available [here](http://www.rigis.org/datasets/water-supply-districts/data).
+
+**Location Requirements**
+
+RULES AND REGULATIONS GOVERNING THE ENFORCEMENT OF CHAPTER 46-13.2 RELATING TO THE DRILLING OF DRINKING WATER WELLS: 7.01 Well Location
+A. Wells shall be located in a manner to reduce the likelihood of contamination from sources of pollution at or near the ground surface. The following are minimum isolation distances from the oklisted potential contamination sources:
+ distribution box and septic tank ------75 feet
+ sewage disposal field ----------------100 feet
+ sewer line ----------------------------50 feet
+ road ----------------------------------50 feet*
+*(from the edge of the road surface)
+Fuel storage tanks should be located as far as possible from wells or animal waste storage facilities.
+B. Wells shall not be located within 100 feet of livestock pens or animal waste storage facilities. A 20 foot wide distance shall be maintained between a well and active agricultural areas. Wells shall be located uphill from grazing areas whenever possible. Such wells are suggested to be analyzed for nitrate levels prior to use ( Does not apply to wells used solely for irrigation)."
+
+[Source](http://www.dem.ri.gov/pubs/regs/regs/water/weldrill.pdf)
+
+**Reporting Requirements**
+
+Upon completion of construction alteration or abandonment of a well, the well driller shall submit a well completion report to the department upon a form provided by the department. (See Appendix A). Such reports shall be submitted within 15 working days of the completion of the well and shall include the results of a 5 hour pump test.
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|45,000||||||1989|No|
+
+
+## South Carolina
+
+**Location Requirements**                                                                     
+
+Sewer lines: 20 feet. Lakes, streams, surface-water bodies: 50 feet. Septic tank/tile fields: 75 feet. Animal feedlots, barns, stables: 50 feet. Waste disposal--land application sites: 100 feet. Waste treatment lagoons: 100 feet. Chemical, herbicide, pesticide and petroleum storage or handling sites: 100 feet. Landfills: 100 feet. Hazardous waste landfills/surface impoundments: 100 feet. Radioactive waste landfills: 100 feet. Property lines and buildings: 5 feet."
+
+[Source](https://www.scdhec.gov/sites/default/files/media/document/R.61-71.pdf#page=6)
+
+**Reporting Requirements**
+
+State Regulation requires that the Department be notified of a private drinking water well or irrigation well before installation.
+
+**Notes**
+
+Unable to find any records of intent to drill notices online, but they are required to be reported to the department of health and environmental control.
+ 
+## South Dakota
+
+**Description**
+
+Well completion reports are maintained by South Dakota DENR.  GPS coordinates are not included, and the resolution for PLSS only goes down to the quarter section (.65 km2).
+
+**Location Requirements**
+
+ (1)  Wells supplied by aquifers whose top is less than 100 feet deep may be located no closer than 150 feet horizontally from a pollution source, 75 feet horizontally from wastewater system components, or 30 feet horizontally from sewer lines as defined by subdivision 74:02:04:20(46);
+ 
+ (2)  Wells supplied by aquifers whose top is more than 100 feet deep may be located no closer than 100 feet horizontally from a pollution source, 50 feet horizontally from wastewater system components, or 30 feet horizontally from sewer lines as defined by subdivision 74:02:04:20(46);
+ 
+ (3)  No well constructed to supply water to water distribution systems as defined by SDCL 46-1-6(17) may be located any closer than:
+        (a)  Five hundred feet horizontally from a wastewater treatment plant, wastewater pumping station, hazardous chemical warehouse, bulk petroleum storage facility, bulk fertilizer storage facility, or bulk pesticide storage facility; and
+        (b)  One thousand feet horizontally from a sanitary landfill or dump, wastewater drainage ditch, or wastewater stabilization pond; and
+ 
+ (4)  All wells shall be located a minimum of 10 feet horizontally from permanent structures and overhead projections of the structure and 10 feet horizontally from overhead power lines.
+
+Spacing for wells for which water permits are required may be determined individually by the water management board. Small removable structures or pump houses with roof access may be built over a well."
+
+[Source](https://sdlegislature.gov/rules/DisplayRule.aspx?Rule=74:02:04)
+
+**Reporting Requirements**
+	
+46-6-11. Records of well construction required. On each well drilled the driller shall keep accurate records and complete a record of well construction on a form supplied by the chief engineer. If for any reason well construction is begun but not completed, the well driller shall complete the record of well construction to the extent possible. Within one month of completion of a well driller's work on a well, he shall file all well construction records with the chief engineer for placement on permanent file. The public shall have access to the records at any time during normal business hours.
+
+[Link to Data](https://denr.sd.gov/des/wr/dblogsearch.aspx)
+
+|Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
+|----|----|----|----|----|----|----|----|
+|34,570|34,570|N|N|Y|4/4/2017|1974|No|
 
 
 
