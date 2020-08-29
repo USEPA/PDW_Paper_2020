@@ -86,7 +86,7 @@ R12-15-809. Notice of Intention to Drill A notice of intention to drill required
 
 Wells are classified by exempt or non-exempt which are based on the pumping capacity of the well.  Wells that are capable of pumping less than 35 gallons per minute.
 
-[Link to Data](https://gisweb2.azwater.gov/WellReg)
+[Link to Data](https://new.azwater.gov/gis)
 
 |Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
 |----|----|----|----|----|----|----|----|
