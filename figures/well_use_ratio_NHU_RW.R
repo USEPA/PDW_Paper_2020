@@ -1,4 +1,6 @@
 library(tidyverse)
+library(sf)
+library(plotly)
 library(here)
 
 df <- read.csv(here("data/Well_Estimates/final_estimates_block_groups.csv"))%>%
@@ -25,37 +27,65 @@ for(i in states){
   lm <- lm(sub$DR_RW~sub$DR_NHU)
   sub$predicted <- predict(lm)
   sub$residuals <- residuals(lm)
-  write.csv(sub,paste0(here("figures/data/OLS_Outputs"),"/",i,"_Predicted.csv"))
+  #write.csv(sub,paste0(here("figures/data/OLS_Outputs"),"/",i,"_Predicted.csv"))
   stats <- data.frame(state = i ,y_int = as.numeric(lm$coefficients[1]),slope = as.numeric(lm$coefficients[2]),r2 = summary(lm)$r.squared,pVal = round(summary(lm)$coefficients[2,4],10))
   statsDf <- rbind(statsDf,stats)
 }
 
+# write.csv(statsDf, here("figures/data/OLS_Outputs/statsByState.csv")) # Write output statistics
 
 
+# Import OLS regression outputs and combine into a single data frame
+
+olsFiles <- list.files(here("figures/data/OLS_Outputs/"), pattern = "Predicted", full.names = TRUE)
+
+dfAll <- read.csv(olsFiles[1])
+
+for(n in 2:length(olsFiles)){
+  csv <- read.csv(olsFiles[n])
+  dfAll <- rbind(dfAll,csv)
+}
+
+dfFilt <- dfAll%>%
+  filter(DR_NHU < 1.1 & DR_RW <1.1)
 
 
+# Scatter plot of residuals
 
-
-ggplot(df)+
-  geom_point(aes(x = Wells_2010_NHU / Housing_Units, y = Wells_2010_Est / Housing_Units))+
-  geom_segment(aes(x=0,xend=1,y=0,yend=1), color = "red")+
+ggplot(dfFilt, aes(x = DR_NHU, y = DR_RW)) +
+  geom_smooth(method = "lm", se = FALSE, color = "lightgrey") +     # regression line  
+  geom_segment(aes(xend = DR_NHU, yend = predicted), alpha = .2) +      # draw line from point to line
+  geom_point(aes(color = abs(residuals)), size = 2) +  # size of the points
+  scale_color_continuous(low = "green", high = "red") +             # colour of the points mapped to residual size - green smaller, red larger
+  guides(color = FALSE, size = FALSE) +                             # Size legend removed
+  geom_line(aes(y = predicted), shape = 1) +
+  theme_bw()+
   xlim(0,1)+
   ylim(0,1)+
-  labs(title = "NHU vs. RW Well Use Ratio",
-       y = "RW Method", x = "NHU Method")+
   facet_wrap(~State)
 
+# Map residuals
+  # Make a State Selection Here
+stateName <- "Ohio"
 
-oh <- df%>%
-  filter(State == "Ohio")
+selection <- dfFilt%>%
+  filter(State == stateName)
 
-lm <- lm(oh$Wells_2010_Est/oh$Housing_Units ~ oh$Wells_2010_NHU/oh$Housing_Units)
-summary(lm)
+# import spatial dataset
+blkGrps <- st_read("C:/Users/HP/OneDrive - University of North Carolina at Chapel Hill/EPA_12_13_2017/Data/NHGIS/Boundaries.gdb", layer = "US_blck_grp_2010")%>%
+  filter(STATEFP10 == substr(selection$GISJOIN[1],2,3))%>%
+  select(GISJOIN)%>%
+  st_transform(4326)%>%
+  left_join(selection)
 
-co <- df%>%
-  filter(State == "Colorado")
+plot_ly(blkGrps, fillcolor = ~abs(residuals))
 
-colm <- lm(co$Wells_2010_Est/co$Housing_Units ~ co$Wells_2010_NHU/co$Housing_Units)
-summary(lm)
 
-write.csv(oh, here("figures/"))
+# Export the full dataset for use in other GIS
+blkGrpsEX <- st_read("C:/Users/HP/OneDrive - University of North Carolina at Chapel Hill/EPA_12_13_2017/Data/NHGIS/Boundaries.gdb", layer = "US_blck_grp_2010")%>%
+  filter(STATEFP10 %in% substr(dfFilt$GISJOIN,2,3))%>%
+  select(GISJOIN)%>%
+  st_transform(4326)%>%
+  left_join(dfFilt)
+
+st_write(blkGrpsEX, here("figures/data/spatial/DR_Predictions_BlkGrps.shp"))
