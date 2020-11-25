@@ -23,19 +23,24 @@ colnames(df) <- c("GISJOIN","State","H_Units","RW_Wells","NHU_Wells","DR_RW","DR
 # Add in housing unit density change to color it. 
 huDF <- st_read("C:/Users/HP/OneDrive - University of North Carolina at Chapel Hill/EPA_12_13_2017/Groundwater Well Use/Final Well Estimates/National Files.gdb", layer = "US_Blk_Grps_2010")%>%
   st_drop_geometry()%>%
-  select(GISJOIN, Well_RT_90, HU_Chg_90_10)%>%
+  select(GISJOIN, Well_RT_90, HU_Chg_90_10,Unit_Dnsty_10)%>%
   right_join(df)%>%
   mutate(Class = as.factor(ifelse(HU_Chg_90_10 < -1.2, "< -1.2",
                         ifelse(HU_Chg_90_10 < 0, "-1.2 : 0",
                                ifelse(HU_Chg_90_10 < 1.2, "0 - 1.2",
                                       ifelse(HU_Chg_90_10 < 85, "1.2 : 85",
-                                             ifelse(HU_Chg_90_10 >= 85, "> 85", NA)))))))
+                                             ifelse(HU_Chg_90_10 >= 85, "> 85", NA)))))),
+         HU_Density_Class = as.factor(ifelse(Unit_Dnsty_10 < 1, "< 1",
+                                             ifelse( Unit_Dnsty_10 < 5, " 1 - 5",
+                                                     ifelse(Unit_Dnsty_10 < 10, "5 - 10",
+                                                            ifelse(Unit_Dnsty_10 < 14, "10 - 14", "> 14"))))))
 
 # Add in a 95% confidence interval by getting the residuals and finding the 95% residual distance threshold
 lm <- lm(huDF$DR_RW~huDF$DR_NHU)
 huDF$Residuals <- residuals(lm)
 int95 <- 1.96*sd(huDF$Residuals) # 95% confidence interval
 
+#write.csv(huDF, here("figures/huDF.csv"))
 
 # Plot 95% of residuals seperately.
 c95 <- huDF%>%
@@ -48,25 +53,27 @@ o95 <- c95[59814:nrow(c95),]
 
 p1 <- ggplot(huDF,aes(x = DR_NHU, y = DR_RW))+
   geom_point( aes(color = fct_reorder(Class,HU_Chg_90_10)),alpha = .3, size = 1,shape = 16)+
-  geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black")+
-  labs(x = "NHU Domestic Ratio", y = "RW Domestic Ratio", title = "Change in Housing Unit Density")+
+  geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black", linetype = "longdash")+
+  labs(x = "N H U   D o m e s t i c   R a t i o", y = "R W   D o m e s t i c   R a t i o", title = "Change in Housing Unit Density")+
   scale_color_manual(name = bquote('Housing Unit Change'~(km^2)),
                      values = c("#d7191c","#fdae61","#d9ef8b","#a6d96a","#1a9641"))+
   scale_x_continuous(expand = c(0,0), limits = c(0,1.1))+
   scale_y_continuous(expand = c(0,0), limits = c(0,1.4))+
   theme_bw()+
   theme(legend.position = "none",
-        axis.text.y = element_text(angle = 0, vjust = 0, hjust=.5, size=12),
-        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=12),
+        axis.text.y = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
+        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
         panel.grid.major.x = element_blank(),
-        panel.grid.minor.x = element_blank())
-#p1
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_line(size = .5, color = 'black'),
+        title = element_text(size = 11, color = 'black'))
+p1
 
 p2 <- ggplot()+
   geom_point(data = i95, aes(x = DR_NHU, y = DR_RW),color = "#c2aa53",shape = 16,size = 1, alpha = .3)+
-  geom_point(data = o95, aes(x = DR_NHU, y = DR_RW),color = "black",shape = 16,size = 1, alpha = .5)+
-  geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black")+
-  labs(x = "NHU Domestic Ratio", y = "RW Domestic Ratio", title = "95% Nearest Block Groups to Regression Line")+
+  geom_point(data = o95, aes(x = DR_NHU, y = DR_RW),color = "#5e5e5e",shape = 16,size = 1, alpha = .5)+
+  geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black", linetype = "longdash")+
+  labs(x = "N H U   D o m e s t i c   R a t i o", y = "RW Domestic Ratio", title = "95% Nearest to Regression Line")+
   scale_x_continuous(expand = c(0,0), limits = c(0,1.1))+
   scale_y_continuous(expand = c(0,0), limits = c(0,1.4))+
   theme_bw()+
@@ -74,9 +81,11 @@ p2 <- ggplot()+
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
         axis.title.y = element_blank(),
-        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=12),
+        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
         panel.grid.major.x = element_blank(),
-        panel.grid.minor.x = element_blank())
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_line(size = .5, color = 'black'),
+        title = element_text(size = 11, color = 'black'))
 p2
 
 
@@ -87,7 +96,7 @@ plot <- plot_grid(p1,p2)
 # Add title
 title <- ggdraw() +
   draw_label(
-    "Domestic Ratio (NHU v RW)",
+    "Relationship of 2010 Domestic Ratio by RW and NHU Methods",
     fontface = 'bold',
     x = 0,
     hjust = 0
@@ -107,7 +116,7 @@ fig1 <- plot_grid(
   rel_heights = c(0.1, 1)
 )
 
-
+fig1
 
 
 
@@ -127,17 +136,24 @@ df2 <- df2%>%
   ungroup()
 
 fig2 <- ggplot(df2)+
-  geom_col(aes(x = fct_reorder(Range,order), y = BG_Count/27000,fill = group),color = "black",width = 1)+
-  geom_col(aes(x = fct_reorder(Range, order), y = r), width = .3, fill = "white", col = "black", lwd = 1)+
+  geom_col(aes(x = fct_reorder(Range,order), y = BG_Count/27000,fill = group),width = 1, lwd = 0)+
+  geom_col(aes(x = fct_reorder(Range, order), y = r), width = .3, fill = "white", col = "black", lwd = .5)+
   theme_bw()+
-  scale_fill_manual(name = "Block Groups", labels = c("93% of Block Groups","7% of Block Groups"), values = c("#4d4d4d","#adadad"))+
+  scale_fill_manual(name = "Block Group Bins", labels = c("93% of Block Groups","7% of Block Groups"), values = c("#4d4d4d","#adadad"))+
   scale_x_discrete(expand = c(0,0))+
-  scale_y_continuous(name = "Correlation [r]",
-                     sec.axis = sec_axis(trans=~.*2700, name="Number of Block Groups", labels = scales::comma, breaks = c(500,1000,1500,2000,2500)),
+  scale_y_continuous(name = "C o r r e l a t i o n  [ r ]",
+                     sec.axis = sec_axis(trans=~.*2700, name="N u m b e r  o f  B l o c k  G r o u p s", labels = scales::comma, breaks = c(0,675,1350,2025,2700)),
                      expand = c(0,0), limits = c(0,1))+
-  labs(x =bquote('1990 - 2010 Housing Unit Density Change ['~HU/km^2~']'), title = "NHU vs. RW Binned by Housing Unit Change")+
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1.1, size=12),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+  labs(x =bquote('1990 - 2010 Housing Unit Density Change ['~HU/km^2~']'), title = "Correlations by Housing Unit Density Change Bins")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1.1, hjust=1.1, size=10, color = 'black'),
+        axis.text.y = element_text(size=10, color = 'black'),
+        axis.title.y = element_text(size = 10, color = 'black'),
+        axis.title.x = element_text(size = 10, color = 'black'),
+        legend.title = element_text(size = 10, color = 'black'),
+        legend.position = "bottom",
+        title = element_text(size = 12, color = 'black', face = 'bold'),
+        panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_line(size = .5, color = '#636363'))
   
 fig2
 
@@ -217,3 +233,60 @@ plot_ly(blkGrps, fillcolor = ~abs(residuals))
 #  left_join(dfFilt)
 
 #st_write(blkGrpsEX, here("figures/data/spatial/DR_Predictions_BlkGrps.shp"))
+
+
+
+
+## DR Comparrison by housing unit density
+# We display the threshold from Johnson et al (2019) in red (> 14 HU/ km )
+
+filt <- huDF%>%
+  filter(Unit_Dnsty_10 > 14.2)%>%
+  mutate(newClass = ifelse(Unit_Dnsty_10 < 300, "14.2 - 300","> 300"))
+
+
+p3 <- ggplot(filt,aes(x = DR_NHU, y = DR_RW))+
+  geom_point( aes(color = fct_reorder(newClass,-Unit_Dnsty_10)),alpha = .5, size = 1.2,shape = 16)+
+  geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black", linetype = "longdash")+
+  labs(x = "N H U   D o m e s t i c   R a t i o", y = "R W   D o m e s t i c   R a t i o", title = "2010 Housing Unit Density")+
+  scale_color_manual(name = bquote('Housing Unit Density'~(km^2)),
+                     values = c("#000000","#8c8c8c"))+
+  scale_x_continuous(expand = c(0,0), limits = c(0,1.1))+
+  scale_y_continuous(expand = c(0,0), limits = c(0,1.4))+
+  theme_bw()+
+  theme(legend.position = "right",
+        axis.text.y = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
+        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_line(size = .5, color = 'black'),
+        title = element_text(size = 11, color = 'black'))
+p3
+
+
+
+
+# Checking some final stats on population living in block groups using >95% wells
+
+dfa <- read.csv(here("data/Well_Estimates/final_estimates_block_groups.csv"))%>%
+  select(GISJOIN,State,Housing_Units,Wells_2010_Est,Wells_2010_NHU,Population_BlkGrp)%>%
+  mutate(DR_RW = round(Wells_2010_Est/Housing_Units,4),
+         DR_NHU = round(Wells_2010_NHU/Housing_Units,4),
+         popWellsRW = (Population_BlkGrp/Housing_Units) * Wells_2010_Est,
+         popWellsNHU = (Population_BlkGrp/Housing_Units) * Wells_2010_NHU)
+colnames(dfa) <- c("GISJOIN","State","H_Units","RW_Wells","NHU_Wells","Population","DR_RW","DR_NHU","Pop_Wells_RW","Pop_Wells_NHU")
+
+
+filtRW <- dfa%>%
+  filter(DR_RW > .01)
+
+filtNHU <- dfa%>%
+  filter(DR_NHU > .01)
+
+ov95RW <- dfa%>%
+  filter((Pop_Wells_RW / Population) >= .95)%>%
+  mutate(Pop_Wells_RW = ifelse(Pop_Wells_RW > Population, Population, Pop_Wells_RW))
+
+ov95NHU <- dfa%>%
+  filter((Pop_Wells_NHU / Population) >= .95)%>%
+  mutate(Pop_Wells_NHU = ifelse(Pop_Wells_NHU > Population, Population, Pop_Wells_NHU))
