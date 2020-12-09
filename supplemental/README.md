@@ -675,7 +675,7 @@ Statute RSA 482-B which requires the licensing of water well contractors and the
 
 "The New Hampshire water well inventory database was initiated in 1984 in conjunction with the passage of state statute RSA 482-B which requires the licensing of water well contractors and the submission of well completion reports."
 
-[Link to Data](https://www.des.nh.gov/organization/commissioner/gsu/wwip/index.htm)
+[Link to Data](https://granit.unh.edu/data/metadata?file=wwinv/nh/wwinv.html)
 
 |Records|	Domestic|	Address|	GPS|	PLSS|	Updated|	Reporting Start |	Suitable for RW |
 |----|----|----|----|----|----|----|----|
