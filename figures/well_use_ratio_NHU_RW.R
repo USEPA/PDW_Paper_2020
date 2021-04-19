@@ -42,6 +42,15 @@ int95 <- 1.96*sd(huDF$Residuals) # 95% confidence interval
 
 #write.csv(huDF, here("figures/huDF.csv"))
 
+
+### Try local regressions for low & high density change
+hd <- huDF%>%
+  filter(Residuals < -1*(2*sd(huDF$Residuals)))
+hdlm <- lm(hd$DR_RW~hd$DR_NHU)
+ld <- huDF%>%
+  filter(Residuals > 2*sd(huDF$Residuals))
+ldlm <- lm(ld$DR_RW~ld$DR_NHU)
+
 # Plot 95% of residuals seperately.
 c95 <- huDF%>%
   mutate(absResid = abs(Residuals))%>%
@@ -54,6 +63,8 @@ o95 <- c95[59814:nrow(c95),]
 p1 <- ggplot(huDF,aes(x = DR_NHU, y = DR_RW))+
   geom_point( aes(color = fct_reorder(Class,HU_Chg_90_10)),alpha = .3, size = 1,shape = 16)+
   geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black", linetype = "longdash")+
+  geom_abline(slope = 0.51864, intercept = -0.15510, color = "green", linetype = "solid", size = 2)+
+  geom_abline(slope = 0.79495    , intercept = 0.43505    , color = "red", linetype = "solid", size = 2)+
   labs(x = "N H U   D o m e s t i c   R a t i o", y = "R W   D o m e s t i c   R a t i o", title = "Change in Housing Unit Density")+
   scale_color_manual(name = bquote('Housing Unit Change'~(km^2)),
                      values = c("#d7191c","#fdae61","#d9ef8b","#a6d96a","#1a9641"))+
