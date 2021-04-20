@@ -21,7 +21,7 @@ colnames(df) <- c("GISJOIN","State","H_Units","RW_Wells","NHU_Wells","DR_RW","DR
 #  filter(DR_NHU < 1.1 & DR_RW < 1.1)
 
 # Add in housing unit density change to color it. 
-huDF <- st_read("C:/Users/HP/OneDrive - University of North Carolina at Chapel Hill/EPA_12_13_2017/Groundwater Well Use/Final Well Estimates/National Files.gdb", layer = "US_Blk_Grps_2010")%>%
+huDF <- st_read("D:/data/wells/National Files.gdb", layer = "US_Blk_Grps_2010")%>%
   st_drop_geometry()%>%
   select(GISJOIN, Well_RT_90, HU_Chg_90_10,Unit_Dnsty_10)%>%
   right_join(df)%>%
