@@ -59,12 +59,14 @@ i95 <- c95[1:59813,]
 o95 <- c95[59814:nrow(c95),]
 
 
+# Create polygon for 95% of data
+poly <- data.frame(x = c(0,1.1,1.1,.26,0),
+                   y = c(.23,1.3,.8,0,0))
 
 p1 <- ggplot(huDF,aes(x = DR_NHU, y = DR_RW))+
-  geom_point( aes(color = fct_reorder(Class,HU_Chg_90_10)),alpha = .3, size = 1,shape = 16)+
+  geom_polygon(data = poly, aes(x = x, y = y), fill = "#626363", alpha = .3)+
+  geom_point( aes(color = fct_reorder(Class,HU_Chg_90_10)),alpha = .3, size = 2,shape = 16)+
   geom_abline(slope = 0.9143231, intercept = -0.0041607, color = "black", linetype = "longdash")+
-  geom_abline(slope = 0.51864, intercept = -0.15510, color = "green", linetype = "solid", size = 2)+
-  geom_abline(slope = 0.79495    , intercept = 0.43505    , color = "red", linetype = "solid", size = 2)+
   labs(x = "N H U   D o m e s t i c   R a t i o", y = "R W   D o m e s t i c   R a t i o", title = "Change in Housing Unit Density")+
   scale_color_manual(name = bquote('Housing Unit Change'~(km^2)),
                      values = c("#d7191c","#fdae61","#d9ef8b","#a6d96a","#1a9641"))+
@@ -72,12 +74,12 @@ p1 <- ggplot(huDF,aes(x = DR_NHU, y = DR_RW))+
   scale_y_continuous(expand = c(0,0), limits = c(0,1.4))+
   theme_bw()+
   theme(legend.position = "none",
-        axis.text.y = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
-        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=10, color = 'black'),
+        axis.text.y = element_text(angle = 0, vjust = 0, hjust=.5, size=12, color = 'black'),
+        axis.text.x = element_text(angle = 0, vjust = 0, hjust=.5, size=12, color = 'black'),
         panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_line(size = .5, color = 'black'),
-        title = element_text(size = 11, color = 'black'))
+        title = element_text(size = 14, color = 'black'))
 p1
 
 p2 <- ggplot()+
