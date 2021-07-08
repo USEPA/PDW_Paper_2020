@@ -4,7 +4,7 @@ library(here)
 library(DT)
 library(gt)
 
-df <- read.csv(here("data/csv/final_estimates_block_groups.csv"))
+df <- read.csv(here("data/Well_Estimates/final_estimates_block_groups.csv"))
 
 df$Wells_2010_NHU[is.infinite(df$Wells_2010_NHU)] <- 0
 # NHU_All
