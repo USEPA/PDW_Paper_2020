@@ -1,6 +1,7 @@
 library(sf)
 library(dplyr)
 library(here)
+library(vroom)
 
 
 # *** This script imports oiriginal files downloaded from NHGIS,
@@ -14,12 +15,12 @@ library(here)
 ## Import Tabular Data
 ## 1990 tabular data - Make sure file names are correct, as NHGIS appends a download ID to their files
 # If downloaded all at once, this table should contain both housing units and population
-tblHU_POP90 <- read.csv(here("data/tables/nhgis_ds120_1990_blck_grp.csv"))%>%
+tblHU_POP90 <- vroom(here("data/tables/nhgis_ds120_1990_blck_grp.csv"))%>%
   dplyr::select(GISJOIN,ET1001,ESA001)
 colnames(tblHU_POP90) <- c("GISJOIN","Population","Housing_Units")
 
 # Import the 1990 Source of Water Table
-tblSOW90 <- read.csv(here("data/tables/nhgis_ds123_1990_blck_grp.csv"))%>%
+tblSOW90 <- vroom(here("data/tables/nhgis_ds123_1990_blck_grp.csv"))%>%
   dplyr::select(GISJOIN,YEAR,COUNTY,EX5001,EX5002,EX5003,EX5004)
 colnames(tblSOW90) <- c("GISJOIN","YEAR","COUNTY","Public_sow","Drill_sow","Dug_sow","Other_sow")
 

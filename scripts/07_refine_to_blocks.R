@@ -2,6 +2,7 @@ library(tidyverse)
 library(sf)
 library(here)
 library(units)
+library(vroom)
 
 files <- list.files(here("data/shapefiles/nhgis_blocks"), pattern = ".shp$", full.names = TRUE)
 names <- list.files(here("data/shapefiles/nhgis_blocks"), pattern = ".shp$", full.names = FALSE)
@@ -12,7 +13,7 @@ names <- list.files(here("data/shapefiles/nhgis_blocks"), pattern = ".shp$", ful
 #  mutate(STATEFP10 = as.character(STATEFP10))
 
 # Import csv (much faster & same data)
-blkGrps <- read.csv(here("data/csv/final_estimates_block_groups.csv"))%>%
+blkGrps <- vroom(here("data/Well_Estimates/final_estimates_block_groups.csv"))%>%
   mutate(STATEFP10 = str_pad(as.character(STATEFP10),2,pad = "0"))
 
 
