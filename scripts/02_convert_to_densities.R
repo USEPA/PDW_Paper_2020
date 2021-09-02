@@ -54,9 +54,20 @@ cl <- makeCluster(n_cores)
 registerDoParallel(cl)  
 
 start <- Sys.time()
+file.create(here("data/rasters/progress/Dasymetric_1990_report.txt"))
+foreach(i=1:length(counties), .packages = c("R.utils","tidyverse","sf","units","raster","here")) %dopar% {
+  
+  time <- Sys.time()-start
+  
+  write(paste0("Completed ", round(100*(as.numeric(countLines(here("data/rasters/progress/Dasymetric_1990_report.txt")))/4)/length(counties),2),"% of counties",
+                 "\nCounties Remaining: ", length(counties)- as.numeric(countLines(here("data/rasters/progress/Dasymetric_1990_report.txt")))/4,
+                 "\nElapsed Time: ",round(time,3)," [",units(time),"]\n----"),
+          file = here("data/rasters/progress/Dasymetric_1990_report.txt"),append = TRUE)
+  
+}
 
-convert90 <-foreach(n=1:length(counties), .combine='rbind', .packages = c("R.utils","tidyverse","sf","units","raster","here")) %:%
-  foreach(i=1:length(counties), .combine='rbind', .packages = c("R.utils","tidyverse","sf","units","raster","here")) %dopar% {
+
+foreach(i=1:length(counties), .packages = c("R.utils","tidyverse","sf","units","raster","here")) %dopar% {
     sub <- sfEA%>%
       filter(STCO == counties[i])                                # Subset one county at a time
     #print(paste0("Starting ",counties[i]," (",sub$COUNTY[1],")"," at: ",Sys.time()))    # Print the start time for each county
@@ -76,12 +87,10 @@ convert90 <-foreach(n=1:length(counties), .combine='rbind', .packages = c("R.uti
     
     time <- Sys.time()-start
     
-    write(c(paste0("Completed ", round(100*(as.numeric(countLines(here("data/rasters/progress/Dasymetric_1990_report.txt")))/4)/length(counties),2),"% of counties"),
-                 paste0("Counties Remaining: ", length(counties)- as.numeric(countLines(here("data/rasters/progress/Dasymetric_1990_report.txt")))/4),
-                 paste0("Elapsed Time: ",round(time,3)," [",units(time),"]"),
-                 "----"),
-               file = here("data/rasters/progress/Dasymetric_1990_report.txt"),append = TRUE)
-    sub <- data.frame("County" = sub$COUNTY[1],"Status"="Complete")
+    write(paste0("Completed ", round(100*(as.numeric(countLines(here("data/rasters/progress/Dasymetric_1990_report.txt")))/4)/length(counties),2),"% of counties",
+                 "\nCounties Remaining: ", length(counties)- as.numeric(countLines(here("data/rasters/progress/Dasymetric_1990_report.txt")))/4,
+                 "\nElapsed Time: ",round(time,3)," [",units(time),"]\n----"),
+          file = here("data/rasters/progress/Dasymetric_1990_report.txt"),append = TRUE)
   
   }
 
