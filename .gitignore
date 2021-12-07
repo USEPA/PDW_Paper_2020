@@ -16,3 +16,6 @@
 /data/Well_Estimates/Estimates_Public.gpkg
 /data/Well_Estimates/final_estimates_blocks.csv
 /data/tables/
+/data/Well_Estimates/Blocks_by_State.gdb/
+/data/Well_Estimates/Final_Files.gdb/
+data/Well_Estimates/Well_App_Tables/
